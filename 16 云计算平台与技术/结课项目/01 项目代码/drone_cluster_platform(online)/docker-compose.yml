@@ -1,0 +1,49 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      # 移除 build.args 中的代理配置
+    container_name: drone_backend_container
+    environment:
+      POSTGRES_DB: 192.168.0.17
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 112233aaBB
+      FLASK_ENV: production
+      # 移除 environment 中的代理配置
+    ports:
+      - "5000:5000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    env_file:
+      - .env
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      # 移除 build.args 中的代理配置
+    image: drone_frontend_app:latest
+    container_name: drone_frontend_builder
+    volumes:
+      - frontend_dist_data:/app/dist 
+
+  nginx:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.nginx
+    container_name: drone_nginx_server
+    ports:
+      - "80:80"
+    volumes:
+      - frontend_dist_data:/usr/share/nginx/html:ro
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  frontend_dist_data:

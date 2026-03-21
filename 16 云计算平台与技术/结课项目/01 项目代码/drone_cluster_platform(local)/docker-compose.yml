@@ -1,0 +1,98 @@
+services:
+  # 1. PostgreSQL 数据库服务
+  db:
+    image: postgres:14
+    container_name: drone_db_container
+    environment:
+      POSTGRES_USER: drone_user
+      POSTGRES_PASSWORD: drone_password
+      POSTGRES_DB: drone_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data\
+      - ./postgres/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    env_file:
+      - .env
+
+  # 2. Flask Python 后端服务
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      args: # 传递构建参数，用于代理设置 (这是构建时用到的，通常用于下载依赖)
+        HTTP_PROXY: "http://192.168.149.66:7890"
+        HTTPS_PROXY: "http://192.168.149.66:7890"
+        NO_PROXY: "localhost,127.17.0.1,db" # 构建时也应包含 db
+    container_name: drone_backend_container
+    environment: # Flask 后端运行时环境变量 (这是运行时实际使用的)
+      DB_HOST: db # 使用服务名 'db' 连接数据库
+      DB_NAME: drone_db
+      DB_USER: drone_user
+      DB_PASS: drone_password
+      FLASK_ENV: production # Flask 环境变量，设置为生产模式
+      HTTP_PROXY: "http://192.168.149.66:7890"
+      HTTPS_PROXY: "http://192.168.149.66:7890"
+      NO_PROXY: "localhost,127.17.0.1,db"
+    ports:
+      - "5000:5000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/ping"] # 检查 Flask 应用的 /ping 路由
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    env_file:
+      - .env
+
+  # 3. Vue.js 前端应用 (构建阶段) - 不会长期运行
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args: # 传递构建参数，用于代理设置
+        HTTP_PROXY: "http://192.168.149.66:7890"
+        HTTPS_PROXY: "http://192.168.149.66:7890"
+        NO_PROXY: "localhost,127.17.0.1,db" # 构建时需要用这个代理来下载 npm 包
+    image: drone_frontend_app:latest
+    container_name: drone_frontend_builder
+    volumes:
+      - frontend_dist_data:/app/dist 
+    
+  # 4. Nginx 反向代理服务
+  nginx:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.nginx
+    container_name: drone_nginx_server
+    environment:
+      # 大写形式 (Docker 标准)
+      HTTP_PROXY: "http://192.168.149.66:7890"
+      HTTPS_PROXY: "http://192.168.149.66:7890"
+      NO_PROXY: "localhost,127.0.0.1,backend,db,.docker.internal" 
+      # 小写形式 (为 curl 等工具兼容考虑)
+      http_proxy: "http://192.168.149.66:7890"
+      https_proxy: "http://192.168.149.66:7890"
+      no_proxy: "localhost,127.0.0.1,backend,db,.docker.internal" # <-- 这里添加了小写形式
+    ports:
+      - "80:80"
+    volumes:
+      - frontend_dist_data:/usr/share/nginx/html:ro
+    depends_on:
+      backend:
+        condition: service_healthy
+      frontend:
+        condition: service_started
+
+volumes:
+  db_data:
+  frontend_dist_data:
