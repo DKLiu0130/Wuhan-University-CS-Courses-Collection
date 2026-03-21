@@ -1,0 +1,36 @@
+# --- Office 临时文件  ---
+~$*
+~WRL*.tmp
+*.tmp
+
+# --- 编译产物---
+bin/
+obj/
+*.exe
+*.out
+*.app
+*.i
+*.s
+*.o
+
+# --- 常见 IDE 和系统垃圾 ---
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.db
+Thumbs.db
+.DS_Store
+
+# --- 编程语言相关 ---
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# Java 编译结果
+*.class
+
+# C++ 调试文件
+*.pdb
+*.ilk
