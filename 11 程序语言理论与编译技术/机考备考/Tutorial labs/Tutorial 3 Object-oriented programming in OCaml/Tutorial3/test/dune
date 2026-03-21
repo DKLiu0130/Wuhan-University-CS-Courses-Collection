@@ -1,0 +1,11 @@
+(test
+ (name Test1_Tutorial3)
+ (libraries qcheck Solution_Tutorial3))
+
+(test
+ (name Test2_Tutorial3)
+ (libraries qcheck Solution_Tutorial3))
+
+(test
+ (name Test4_Tutorial3)
+ (libraries qcheck Solution_Tutorial3))

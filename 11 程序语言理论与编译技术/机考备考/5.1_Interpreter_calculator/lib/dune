@@ -1,0 +1,6 @@
+(library
+ (name mathlib)
+ (modules parser lexer ast))
+
+(ocamllex lexer)
+(ocamlyacc parser)

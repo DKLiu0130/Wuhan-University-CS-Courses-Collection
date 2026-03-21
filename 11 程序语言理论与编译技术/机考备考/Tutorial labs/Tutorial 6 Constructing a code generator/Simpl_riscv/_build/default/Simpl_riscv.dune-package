@@ -1,0 +1,4 @@
+(lang dune 3.17)
+(name Simpl_riscv)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (Simpl_riscv)))

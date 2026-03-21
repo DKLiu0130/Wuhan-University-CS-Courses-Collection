@@ -1,0 +1,28 @@
+type token =
+    TRUE
+  | TIMES
+  | THEN
+  | RPAREN
+  | PLUS
+  | MINUS
+  | LPAREN
+  | LET
+  | LEQ
+  | INT of int
+  | IN
+  | IF
+  | ID of string
+  | FUNC
+  | FALSE
+  | EQUALS
+  | EOF
+  | ELSE
+  | DIV
+  | ARROW
+val make_apply : Ast.expr -> Ast.expr list -> Ast.expr
+val menhir_begin_marker : int
+val xv_simpl_expr : Ast.expr
+val xv_nonempty_list_simpl_expr_ : Ast.expr list
+val xv_main : Ast.expr
+val xv_expr : Ast.expr
+val menhir_end_marker : int

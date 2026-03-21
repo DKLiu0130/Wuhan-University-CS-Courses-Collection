@@ -1,0 +1,3 @@
+(library
+ (name lex_project)
+ (modules lexer ast parser))

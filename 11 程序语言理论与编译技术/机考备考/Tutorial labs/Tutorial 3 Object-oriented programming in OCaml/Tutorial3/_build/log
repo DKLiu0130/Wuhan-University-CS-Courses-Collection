@@ -1,0 +1,28 @@
+# dune runtest
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/opam/.cache/dune/db
+# Workspace root: /home/opam/PL&C/Tutorial3
+# Auto-detected concurrency: 20
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/opam/.opam/5.2/bin/ocamlc.opt -config > /tmp/dune_7e9bc5_output
+$ (cd _build/default/test && ./Test4_Tutorial3.exe)
+>  seed: 207432138
+> ================================================================================
+> success (ran 4 tests)
+$ (cd _build/default/test && ./Test2_Tutorial3.exe)
+>  seed: 144156528
+> ================================================================================
+> success (ran 4 tests)
+$ (cd _build/default/test && ./Test1_Tutorial3.exe)
+>  seed: 180979070
+> ================================================================================
+> success (ran 3 tests)

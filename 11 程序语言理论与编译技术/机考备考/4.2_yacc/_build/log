@@ -1,0 +1,27 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/whu-plc/.cache/dune/db
+# Workspace root:
+# "/home/whu-plc/\230\161\140\233\157\162/Parser_calculater_yacc"
+# Auto-detected concurrency: 4
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_fcd014_output
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl lib/lexer.ml) > _build/default/lib/.my_lib.objs/my_lib__Lexer.impl.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl lib/parser.ml) > _build/default/lib/.my_lib.objs/my_lib__Parser.impl.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.my_lib.objs/byte -no-alias-deps -opaque -open My_lib -o lib/.my_lib.objs/byte/my_lib__Lexer.cmo -c -impl lib/lexer.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.my_lib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -open My_lib -o lib/.my_lib.objs/byte/my_lib__Parser.cmo -c -impl lib/parser.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/my_lib.cma lib/.my_lib.objs/byte/my_lib.cmo lib/.my_lib.objs/byte/my_lib__Stack.cmo lib/.my_lib.objs/byte/my_lib__Ast.cmo lib/.my_lib.objs/byte/my_lib__Parser.cmo lib/.my_lib.objs/byte/my_lib__Lexer.cmo)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.my_lib.objs/byte -I lib/.my_lib.objs/native -intf-suffix .ml -no-alias-deps -opaque -open My_lib -o lib/.my_lib.objs/native/my_lib__Lexer.cmx -c -impl lib/lexer.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.my_lib.objs/byte -I lib/.my_lib.objs/native -intf-suffix .ml -no-alias-deps -opaque -open My_lib -o lib/.my_lib.objs/native/my_lib__Parser.cmx -c -impl lib/parser.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/my_lib.cmxa lib/.my_lib.objs/native/my_lib.cmx lib/.my_lib.objs/native/my_lib__Stack.cmx lib/.my_lib.objs/native/my_lib__Ast.cmx lib/.my_lib.objs/native/my_lib__Parser.cmx lib/.my_lib.objs/native/my_lib__Lexer.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/my_lib.cmxs lib/my_lib.cmxa)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o main.exe lib/my_lib.cmxa .main.eobjs/native/dune__exe__Main.cmx)

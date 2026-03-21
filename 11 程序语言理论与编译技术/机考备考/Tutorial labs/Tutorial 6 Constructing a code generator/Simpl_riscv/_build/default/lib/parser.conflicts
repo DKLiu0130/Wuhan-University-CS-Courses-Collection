@@ -1,0 +1,64 @@
+
+** Conflict (shift/reduce) in state 24.
+** Tokens involved: TRUE TIMES PLUS MINUS LPAREN LET LEQ INT IF ID FUNC FALSE DIV
+** The following explanations concentrate on token TRUE.
+** This state is reached from main after reading:
+
+FUNC ID ARROW simpl_expr simpl_expr
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+main 
+expr EOF 
+(?)
+
+** In state 24, looking ahead at TRUE, reducing production
+** nonempty_list(simpl_expr) -> simpl_expr
+** is permitted because of the following sub-derivation:
+
+simpl_expr nonempty_list(simpl_expr) // lookahead token appears because nonempty_list(simpl_expr) can begin with TRUE
+FUNC ID ARROW expr // lookahead token is inherited
+              simpl_expr nonempty_list(simpl_expr) // lookahead token is inherited
+                         simpl_expr . 
+
+** In state 24, looking ahead at TRUE, shifting is permitted
+** because of the following sub-derivation:
+
+simpl_expr 
+FUNC ID ARROW expr 
+              simpl_expr nonempty_list(simpl_expr) 
+                         simpl_expr nonempty_list(simpl_expr) 
+                                    simpl_expr 
+                                    . TRUE 
+
+** Conflict (shift/reduce) in state 13.
+** Tokens involved: TRUE TIMES PLUS MINUS LPAREN LET LEQ INT IF ID FUNC FALSE DIV
+** The following explanations concentrate on token TRUE.
+** This state is reached from main after reading:
+
+FUNC ID ARROW simpl_expr
+
+** The derivations that appear below have the following common factor:
+** (The question mark symbol (?) represents the spot where the derivations begin to differ.)
+
+main 
+expr EOF 
+(?)
+
+** In state 13, looking ahead at TRUE, reducing production
+** expr -> simpl_expr
+** is permitted because of the following sub-derivation:
+
+simpl_expr nonempty_list(simpl_expr) // lookahead token appears because nonempty_list(simpl_expr) can begin with TRUE
+FUNC ID ARROW expr // lookahead token is inherited
+              simpl_expr . 
+
+** In state 13, looking ahead at TRUE, shifting is permitted
+** because of the following sub-derivation:
+
+simpl_expr 
+FUNC ID ARROW expr 
+              simpl_expr nonempty_list(simpl_expr) 
+                         simpl_expr 
+                         . TRUE 

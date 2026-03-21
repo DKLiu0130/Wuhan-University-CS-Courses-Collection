@@ -1,0 +1,5 @@
+let x = 5 in if x == 5 && 3 + 2 = 5 then true else false;
+if 2 * 3 == 6 && 3 > 2 && 2 != 1 then true else false;
+if !true then true else false;
+if 1 > 2 || 2 > 1 then true else false
+let x = 5 in x * -5
