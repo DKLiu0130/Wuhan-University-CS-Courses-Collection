@@ -1,0 +1,164 @@
+DATA SEGMENT
+OUTPUT DB 'CYCLE: '
+LEN EQU $-OUTPUT
+CYCLE_COUNT DB '0'
+DATA ENDS
+
+EXTRA SEGMENT
+ORG 0FH
+BUF DB 1000 DUP(?)
+EXTRA ENDS
+
+STACK SEGMENT
+DW 1000 DUP(?)
+STACK ENDS
+
+CODE SEGMENT
+ASSUME CS:CODE, DS:DATA, ES:EXTRA, SS: STACK
+BEGIN: 
+MOV AX, DATA
+MOV DS, AX
+MOV AX, EXTRA
+MOV ES, AX
+MOV AX, STACK
+MOV SS, AX
+
+；8259A先初始化
+MOV AL, 00010001B     
+OUT 20H, AL     ；主片ICW1
+MOV AL, 00001000B   
+OUT 21H, AL     ；主片ICW2
+MOV AL, 00001000B
+OUT 21H, AL     ；主片ICW3 
+MOV AL, 00010001B    
+OUT 21H, AL     ；主片ICW4
+IN AL, 21H
+AND AL, 11110111B
+OUT 21H, AL     ；主片OCW1
+MOV AL, 00010001B     
+OUT 0A0H, AL     ；从片ICW1
+·MOV AL, 01110000B   
+OUT 0A1H, AL     ；从片ICW2
+MOV AL, 00000011B
+OUT 0A1H, AL     ；从片ICW3
+MOV AL, 00000001B  
+OUT 0A1H, AL     ；从片ICW4
+IN AL, 0A1H
+AND AL, 00111111B
+OUT 0A1H, AL     ；从片OCW1
+
+；8237A初始化
+DMA EQU 00H
+OUT DMA+0DH, AL    ；主清命令
+MOV AL, 01000101B   
+OUT DMA+0BH, AL   ；设置方式字
+MOV AL, 00000001B
+OUT DMA+0AH, AL   ；设置屏蔽寄存器
+MOV AL, 10000000B
+OUT DMA+08H, AL   ；设置命令寄存器
+
+；中断向量表初始化
+PUSH DS
+MOV AX, 0
+MOV DS, AX
+MOV AX, OFFSET IRQ_5S
+MOV DS:[01DCH], AX
+MOV AX, CS   ；或SEG IRQ_5S
+MOV DS:[01DEH], AX          ；设置5s中断向量
+MOV AX, OFFSET IRQ_COUNT
+MOV DS:[01D8H], AX
+MOV AX, CS   ；或SEG IRQ_COUNT
+MOV DS:[01DAH], AX          ；设置计数器中断向量
+POP DS
+
+STI    ；开中断
+
+；8253定时器初始化
+MOV AL, 00110100B  
+OUT 43H, AL          ；通道0控制字
+MOV AX, 50000
+OUT 40H, AL           ；传入低位数据
+MOV AL, AH
+OUT 40H, AL           ；传入高位数据
+MOV AL, 01010110B
+OUT 43H, AL         	；通道1控制字
+MOV AL, 100
+OUT 41H, AL           ；传入数据
+
+；8253计数器初始化
+MOV AL, 10010001B
+OUT 43H, AL          ；通道2控制字
+MOV AL, 05H         ；第一次需要6次
+OUT 42H, AL          ；传入数据
+
+MAIN:
+MOV AH, 02H     ；INT 21H模式
+MOV CX, LEN
+MOV SI, OFFSET OUTPUT
+LAB:
+MOV DL, DS:[SI]
+INT 21H
+INC SI
+LOOP                   ；循环输出提示词
+MOV DL, CYCLE_COUNT
+INT 21H               ；次数显示
+MOV DL, 0DH      ；回车
+INT 21H
+MOV DL, 0AH      ；换行
+INT 21H
+JMP MAIN
+
+IRQ_5S:
+PUSH AX                      ；保护现场
+STI                                ；开启中断
+MOV AX, CYCLE_COUNT
+CMP AX, '9'
+JZ RETURN
+ADD AX, 01H
+MOV CYCLE_COUNT, AX
+JMP NEXT
+RETURN:
+MOV CYCLE_COUNT, '0'
+NEXT:                          ；对COUNT循环递增
+CLI                               ；关闭中断
+MOV AL, 00100111B
+MOV 0A0H, AL            ；从片EOI
+MOV AL, 00100011B
+MOV 20H, AL              ；主片EOI
+POP AX                       ；恢复现场
+IRET
+
+IRQ_COUNT:
+PUSH AX                      ；保护现场
+MOV SI, OFFSET BUF
+MOV AX, ES
+MOV BX, AX
+MOV CL, 0CH
+SHR BX, CL
+MOV CL, 04H
+SHL AX, CL
+ADD AX, SI
+ADC BX, 0                   ；处理20位地址，AX存低16位，BX存高4位
+OUT DMA+02H, AL
+MOV AL, AH
+OUT DMA+02H, AL     
+MOV AL, BL
+OUT 81H, AL             ；通道1基地址寄存器
+MOV AX, 1024
+DEC AX
+MOV DMA+03H, AL 
+MOV AL, AH
+MOV DMA+03H, AL  ；通道1字计数寄存器
+MOV AL, 00000101B  
+OUT DMA+09H, AL     ；设置请求寄存器 
+MOV AL, 05H
+OUT 42H, AL               ；重置中断
+MOV AL, 00100110B
+MOV 0A0H, AL            ；从片EOI
+MOV AL, 00100011B
+MOV 20H, AL               ；主片EOI
+POP AX                        ；恢复现场
+IRET
+
+CODE ENDS
+END BEGIN
