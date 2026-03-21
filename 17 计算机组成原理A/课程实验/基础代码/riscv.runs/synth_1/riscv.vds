@@ -1,0 +1,761 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 11 17:02:20 2024
+# Process ID: 2904
+# Current directory: D:/Documents/VivadoRepo/riscv/riscv.runs/synth_1
+# Command line: vivado.exe -log riscv.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source riscv.tcl
+# Log file: D:/Documents/VivadoRepo/riscv/riscv.runs/synth_1/riscv.vds
+# Journal file: D:/Documents/VivadoRepo/riscv/riscv.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source riscv.tcl -notrace
+Command: synth_design -top riscv -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11820 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 375.465 ; gain = 99.547
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'riscv' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_divider' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:190]
+	Parameter DIV_NUM bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider' (1#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:190]
+INFO: [Synth 8-6157] synthesizing module 'clk_divider__parameterized0' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:190]
+	Parameter DIV_NUM bound to: 27 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider__parameterized0' (1#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:190]
+INFO: [Synth 8-6157] synthesizing module 'clk_divider__parameterized1' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:190]
+	Parameter DIV_NUM bound to: 14 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_divider__parameterized1' (1#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:190]
+INFO: [Synth 8-6157] synthesizing module 'pc' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (2#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/instruction_memory.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_im' [D:/Documents/VivadoRepo/riscv/riscv.runs/synth_1/.Xil/Vivado-2904-WIN-T6A1S95DRJ2/realtime/dist_mem_im_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_im' (3#1) [D:/Documents/VivadoRepo/riscv/riscv.runs/synth_1/.Xil/Vivado-2904-WIN-T6A1S95DRJ2/realtime/dist_mem_im_stub.v:6]
+WARNING: [Synth 8-689] width (5) of port connection 'a' does not match port width (4) of module 'dist_mem_im' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/instruction_memory.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (4#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/instruction_memory.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'instr_addr' does not match port width (5) of module 'instruction_memory' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:74]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/register_file.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (5#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/register_file.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/alu.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (6#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/alu.v:24]
+INFO: [Synth 8-6157] synthesizing module 'EXT' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/EXT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EXT' (7#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/EXT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ctrl_unit' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/ctrl_unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl_unit' (8#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/ctrl_unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:53]
+WARNING: [Synth 8-5788] Register dmem_reg[127] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[126] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[125] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[124] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[123] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[122] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[121] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[120] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[119] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[118] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[117] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[116] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[115] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[114] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[113] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[112] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[111] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[110] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[109] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[108] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[107] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[106] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[105] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[104] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[103] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[102] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[101] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[100] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[99] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[98] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[97] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[96] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[95] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[94] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[93] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[92] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[91] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[90] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[89] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[88] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[87] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[86] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[85] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[84] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[83] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[82] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[81] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[80] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[79] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[78] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[77] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[76] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[75] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[74] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[73] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[72] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[71] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[70] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[69] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[68] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[67] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[66] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[65] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[64] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[63] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[62] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[61] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[60] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[59] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[58] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[57] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[56] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[55] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[54] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[53] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[52] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[51] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[50] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[49] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[48] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[47] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[46] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[45] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[44] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[43] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[42] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[41] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[40] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[39] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[38] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[37] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[36] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[35] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[34] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[33] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[32] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[31] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[30] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[29] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+WARNING: [Synth 8-5788] Register dmem_reg[28] in module data_memory is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:48]
+INFO: [Common 17-14] Message 'Synth 8-5788' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (9#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:24]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (7) of module 'data_memory' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:135]
+INFO: [Synth 8-6157] synthesizing module 'addr_controller' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:206]
+	Parameter ADDR_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'addr_controller' (10#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:206]
+INFO: [Synth 8-6157] synthesizing module 'addr_controller__parameterized0' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:206]
+	Parameter ADDR_SIZE bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'addr_controller__parameterized0' (10#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:206]
+INFO: [Synth 8-6085] Hierarchical reference on 'register_file' stops possible memory inference [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/register_file.v:35]
+INFO: [Synth 8-6085] Hierarchical reference on 'dmem' stops possible memory inference [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/data_memory.v:33]
+INFO: [Synth 8-6157] synthesizing module 'disp_seg16x' [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/disp_seg16x.v:23]
+INFO: [Synth 8-226] default block is never used [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/disp_seg16x.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'disp_seg16x' (11#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/disp_seg16x.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'riscv' (12#1) [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/riscv.v:23]
+WARNING: [Synth 8-3331] design disp_seg16x has unconnected port rstn
+WARNING: [Synth 8-3331] design ctrl_unit has unconnected port EXTOp[5]
+WARNING: [Synth 8-3331] design ctrl_unit has unconnected port EXTOp[1]
+WARNING: [Synth 8-3331] design ctrl_unit has unconnected port ALUOp[4]
+WARNING: [Synth 8-3331] design ctrl_unit has unconnected port ALUOp[3]
+WARNING: [Synth 8-3331] design instruction_memory has unconnected port instr_addr[4]
+WARNING: [Synth 8-3331] design riscv has unconnected port sw_i[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 470.156 ; gain = 194.238
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 470.156 ; gain = 194.238
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 470.156 ; gain = 194.238
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/ip/dist_mem_im/dist_mem_im/dist_mem_im_in_context.xdc] for cell 'u_im/u_im'
+Finished Parsing XDC File [d:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/ip/dist_mem_im/dist_mem_im/dist_mem_im_in_context.xdc] for cell 'u_im/u_im'
+Parsing XDC File [D:/Vivado/icf.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[15]'. [D:/Vivado/icf.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'BTNC_IBUF'. [D:/Vivado/icf.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [D:/Vivado/icf.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [D:/Vivado/icf.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [D:/Vivado/icf.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [D:/Vivado/icf.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [D:/Vivado/icf.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [D:/Vivado/icf.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [D:/Vivado/icf.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [D:/Vivado/icf.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [D:/Vivado/icf.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [D:/Vivado/icf.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [D:/Vivado/icf.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [D:/Vivado/icf.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [D:/Vivado/icf.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [D:/Vivado/icf.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [D:/Vivado/icf.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [D:/Vivado/icf.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [D:/Vivado/icf.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'BTNC'. [D:/Vivado/icf.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [D:/Vivado/icf.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [D:/Vivado/icf.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [D:/Vivado/icf.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [D:/Vivado/icf.xdc:71]
+Finished Parsing XDC File [D:/Vivado/icf.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Vivado/icf.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/riscv_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado/icf.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/riscv_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/riscv_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 831.453 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 831.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 831.473 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 831.473 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 831.473 ; gain = 555.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 831.473 ; gain = 555.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for u_im/u_im. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 831.473 ; gain = 555.555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Documents/VivadoRepo/riscv/riscv.srcs/sources_1/new/alu.v:33]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 831.473 ; gain = 555.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |riscv__GB0    |           1|     40158|
+|2     |riscv__GB1    |           1|     13479|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 36    
+	                8 Bit    Registers := 129   
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 42    
+	   3 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1087  
+	   4 Input      8 Bit        Muxes := 126   
+	   3 Input      8 Bit        Muxes := 50    
+	   6 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 126   
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module riscv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module data_memory 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 128   
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1087  
+	   4 Input      8 Bit        Muxes := 126   
+	   3 Input      8 Bit        Muxes := 50    
+	   6 Input      8 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 126   
+	   3 Input      2 Bit        Muxes := 3     
+Module disp_seg16x 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 1     
+Module addr_controller__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+Module addr_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 2     
+Module register_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 34    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 37    
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design riscv has unconnected port sw_i[3]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[94][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[94][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[94][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[94][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[94][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[93][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[93][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[93][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[93][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[93][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[96][5]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[96][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[95][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[95][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[95][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[95][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[95][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[95][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[90][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[90][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[90][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[90][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[89][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[89][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[89][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[89][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[92][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[92][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[92][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[92][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[91][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[91][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[91][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[91][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[91][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[86][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[86][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[86][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[86][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[85][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[85][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[85][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[85][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[88][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[88][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[88][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[87][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[87][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[87][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[87][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[87][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[84][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[84][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[84][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[83][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[83][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[83][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[83][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[82][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[82][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[82][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[81][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[81][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[81][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[72][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[72][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[71][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[71][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[71][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[71][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[70][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[70][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[70][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[69][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[69][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[69][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[66][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[66][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[65][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[65][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[68][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[68][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[67][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[67][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[67][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[74][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[74][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[74][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[73][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[73][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[73][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[76][2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[76][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[76][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[75][0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[75][1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[75][3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[75][6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[80][4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_0/u_dm/\dmem_reg[80][6]_LDC )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][6]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][6]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][5]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][5]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][4]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][4]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][3]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][3]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][2]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][2]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][1]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][1]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][0]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[127][0]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][6]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][6]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][5]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][5]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][4]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][4]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][3]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][3]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][2]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][2]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][1]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[126][1]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][6]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][6]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][5]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][5]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][4]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][4]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][3]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][3]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][2]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][2]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][0]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[125][0]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[124][6]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[124][6]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[124][5]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[124][5]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[124][4]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[124][4]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[124][3]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[124][3]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[124][2]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[124][2]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][6]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][6]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][5]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][5]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][4]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][4]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][3]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][3]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][1]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][1]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][0]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[123][0]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[122][6]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[122][6]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[122][5]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[122][5]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[122][4]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[122][4]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[122][3]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[122][3]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[122][1]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[122][1]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[121][6]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[121][6]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[121][5]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[121][5]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[121][4]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[121][4]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[121][3]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[121][3]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[121][0]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[121][0]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[120][6]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[120][6]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[120][5]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[120][5]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[120][4]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[120][4]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[120][3]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[120][3]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][6]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][6]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][5]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][5]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][4]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][4]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][2]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][2]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][1]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][1]_C) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][0]_LDC) is unused and will be removed from module data_memory.
+WARNING: [Synth 8-3332] Sequential element (dmem_reg[119][0]_C) is unused and will be removed from module data_memory.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 1123.277 ; gain = 847.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |riscv__GB0    |           1|     24314|
+|2     |riscv__GB1    |           1|      7694|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 1123.277 ; gain = 847.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:16 . Memory (MB): peak = 1123.277 ; gain = 847.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |riscv__GB0    |           1|     24314|
+|2     |riscv__GB1    |           1|      7694|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:22 . Memory (MB): peak = 1123.277 ; gain = 847.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 1123.277 ; gain = 847.359
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 1123.277 ; gain = 847.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1123.277 ; gain = 847.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1123.277 ; gain = 847.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 1123.277 ; gain = 847.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 1123.277 ; gain = 847.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |dist_mem_im   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |dist_mem_im |     1|
+|2     |BUFG        |     3|
+|3     |CARRY4      |    50|
+|4     |LUT1        |    27|
+|5     |LUT2        |   105|
+|6     |LUT3        |   431|
+|7     |LUT4        |   664|
+|8     |LUT5        |  1452|
+|9     |LUT6        |  5793|
+|10    |MUXF7       |   957|
+|11    |MUXF8       |   206|
+|12    |FDCE        |  2138|
+|13    |FDPE        |   976|
+|14    |FDRE        |   184|
+|15    |IBUF        |    17|
+|16    |OBUF        |    16|
++------+------------+------+
+
+Report Instance Areas: 
++------+----------------+--------------------------------+------+
+|      |Instance        |Module                          |Cells |
++------+----------------+--------------------------------+------+
+|1     |top             |                                | 13051|
+|2     |  u_alu         |alu                             |    14|
+|3     |  div12         |clk_divider__parameterized1     |    20|
+|4     |  div24         |clk_divider                     |    35|
+|5     |  div27         |clk_divider__parameterized0     |    37|
+|6     |  u_alu_addr    |addr_controller__parameterized0 |    97|
+|7     |  u_disp_seg16x |disp_seg16x                     |    26|
+|8     |  u_dm          |data_memory                     |  4107|
+|9     |  u_ext         |EXT                             |     1|
+|10    |  u_im          |instruction_memory              |  4935|
+|11    |  u_pc          |pc                              |    63|
+|12    |  u_rf          |register_file                   |  2732|
+|13    |  u_rf_addr     |addr_controller                 |   435|
++------+----------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 1123.277 ; gain = 847.359
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1473 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:21 . Memory (MB): peak = 1123.277 ; gain = 486.043
+Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:01:28 . Memory (MB): peak = 1123.277 ; gain = 847.359
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1213 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1123.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+150 Infos, 236 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:32 . Memory (MB): peak = 1123.277 ; gain = 858.875
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1123.277 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Documents/VivadoRepo/riscv/riscv.runs/synth_1/riscv.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file riscv_utilization_synth.rpt -pb riscv_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 17:03:58 2024...

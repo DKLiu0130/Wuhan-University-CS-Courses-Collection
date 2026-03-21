@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Dec 11 17:01:49 2024
+# Process ID: 12140
+# Current directory: D:/Documents/VivadoRepo/riscv/riscv.runs/dist_mem_im_synth_1
+# Command line: vivado.exe -log dist_mem_im.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dist_mem_im.tcl
+# Log file: D:/Documents/VivadoRepo/riscv/riscv.runs/dist_mem_im_synth_1/dist_mem_im.vds
+# Journal file: D:/Documents/VivadoRepo/riscv/riscv.runs/dist_mem_im_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dist_mem_im.tcl -notrace
