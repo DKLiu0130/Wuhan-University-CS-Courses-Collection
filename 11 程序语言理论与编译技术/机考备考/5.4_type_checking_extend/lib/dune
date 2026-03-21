@@ -1,0 +1,18 @@
+(library
+ (name interpreterlib)
+ (modules parser lexer ast))
+
+(rule
+ (targets parser.ml parser.mli parser.output)
+ (deps parser.mly)
+ (action
+  (chdir %{workspace_root}
+   ;; 提供 .output 文件在 ./_build/default/lib/parser.output
+   (run ocamlyacc -v lib/parser.mly)))) 
+
+(rule
+ (targets lexer.ml)
+ (deps lexer.mll)
+ (action
+  (chdir %{workspace_root}
+   (run ocamllex -o lib/lexer.ml lib/lexer.mll))))

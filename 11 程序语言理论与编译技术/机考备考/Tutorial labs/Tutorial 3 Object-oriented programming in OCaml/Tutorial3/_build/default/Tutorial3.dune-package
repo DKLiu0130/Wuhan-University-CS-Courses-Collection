@@ -1,0 +1,4 @@
+(lang dune 3.16)
+(name Tutorial3)
+(sections (lib .) (bin ../../bin))
+(files (lib (META dune-package opam)) (bin (Tutorial3)))

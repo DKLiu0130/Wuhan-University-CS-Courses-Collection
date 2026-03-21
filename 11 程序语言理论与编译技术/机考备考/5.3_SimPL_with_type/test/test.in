@@ -1,0 +1,10 @@
+let x = 3110 in let x = x + 1 in x + x
+let x = 2 in if x <= 3 then true else false
+let x = false in if x then 5 else 10
+let x = false in if x then 5 else true
+5 + 10 * 2 - 1
+if 3 <= 2 then 3 else 2
+if 1 then 3 else 2
+let x = 1 in let x = 2 in let y = x + 1 in if y <= 3 then true else false
+3 + true
+let x = 3 in let y = x / 2 in y

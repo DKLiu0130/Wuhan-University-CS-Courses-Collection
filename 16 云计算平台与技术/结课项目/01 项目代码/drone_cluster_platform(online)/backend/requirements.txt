@@ -1,0 +1,10 @@
+# backend/requirements.txt
+Flask==2.3.3
+Flask-SQLAlchemy==3.1.1 # 新增：用于 ORM
+psycopg2-binary==2.9.9
+PyJWT==2.8.0 # 新增：用于 JWT token 认证
+Werkzeug==2.3.7 # Flask 依赖，但为了明确列出密码哈希功能
+python-dotenv==1.0.0
+gunicorn==21.2.0
+python-decouple==3.8 # 新增，用于更优雅地管理环境变量，作为 dotenv 的替代或补充
+APScheduler

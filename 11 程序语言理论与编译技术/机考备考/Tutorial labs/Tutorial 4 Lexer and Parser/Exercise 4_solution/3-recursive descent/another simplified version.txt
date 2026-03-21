@@ -1,0 +1,61 @@
+open My_lib
+open Token
+open Ast
+
+let rec string_of_term = function
+  | True -> "true"
+  | False -> "false"
+  | Zero -> "0"
+  | Succ t -> Printf.sprintf "succ(%s)" (string_of_term t)
+  | Pred t -> Printf.sprintf "pred(%s)" (string_of_term t)
+  | IsZero t -> Printf.sprintf "iszero(%s)" (string_of_term t)
+  | If (cond, t1, t2) ->
+    Printf.sprintf
+      "(if %s then %s else %s)"
+      (string_of_term cond)
+      (string_of_term t1)
+      (string_of_term t2)
+;;
+
+let new_one lexbuf = Lexer.main lexbuf
+
+let rec parse_term lexbuf =
+  match new_one lexbuf with
+  | TRUE -> True
+  | FALSE -> False
+  | ZERO -> Zero
+  | SUCC ->
+    let t = parse_term lexbuf in
+    Succ t
+  | PRED ->
+    let t = parse_term lexbuf in
+    Pred t
+  | ISZERO ->
+    let t = parse_term lexbuf in
+    IsZero t
+  | IF ->
+    let cond = parse_term lexbuf in
+    (match new_one lexbuf with
+     | THEN ->
+       let t1 = parse_term lexbuf in
+       (match new_one lexbuf with
+        | ELSE ->
+          let t2 = parse_term lexbuf in
+          If (cond, t1, t2)
+        | _ -> failwith "wrong!")
+     | _ -> failwith "wrong!")
+  | _ -> failwith "Unexpected token"
+;;
+
+let parse_init lexbuf =
+  let ast = parse_term lexbuf in
+  match new_one lexbuf with
+  | EOF -> ast
+  | _ -> raise (Failure "error init")
+;;
+
+let () =
+  let lexbuf = Lexing.from_channel stdin in
+  let result = parse_init lexbuf in
+  Printf.printf "\n%s\n" (string_of_term result)
+;;

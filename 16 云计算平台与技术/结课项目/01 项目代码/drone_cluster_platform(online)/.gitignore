@@ -1,0 +1,13 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+.env
+
+# Node.js
+node_modules/
+dist/
+
+# IDE
+.idea/
+.vscode/

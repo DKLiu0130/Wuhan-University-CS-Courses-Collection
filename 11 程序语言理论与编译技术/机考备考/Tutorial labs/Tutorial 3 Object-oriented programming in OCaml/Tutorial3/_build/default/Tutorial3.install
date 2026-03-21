@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/Tutorial3/META"
+  "_build/install/default/lib/Tutorial3/dune-package"
+  "_build/install/default/lib/Tutorial3/opam"
+]
+bin: [
+  "_build/install/default/bin/Tutorial3"
+]

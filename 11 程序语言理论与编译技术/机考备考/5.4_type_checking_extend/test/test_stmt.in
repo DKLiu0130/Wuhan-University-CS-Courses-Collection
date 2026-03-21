@@ -1,0 +1,9 @@
+let aa_a = 5 in if aa_a == 5 && 3 + 2 == 5 then true else false;
+if 2 * 3 == 6 && 3 > 2 && 2 != 1 then true else false;
+if !true then true else false;
+if 1 > 2 || 2 > 1 then true else false;
+let x = 5 in x * -5;
+3 - 3 * -5;
+let x = false in if x then true else false;
+let x = false in if !x then false else true;
+let x=false in if x==true then 143 else 1432

@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/Simpl_riscv/META"
+  "_build/install/default/lib/Simpl_riscv/dune-package"
+  "_build/install/default/lib/Simpl_riscv/opam"
+]
+bin: [
+  "_build/install/default/bin/Simpl_riscv"
+]

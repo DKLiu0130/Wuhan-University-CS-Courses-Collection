@@ -1,0 +1,6 @@
+(library
+ (name Solution_Tutorial3)
+ (modules Solution1
+          Solution2
+          Solution3
+          Solution4))

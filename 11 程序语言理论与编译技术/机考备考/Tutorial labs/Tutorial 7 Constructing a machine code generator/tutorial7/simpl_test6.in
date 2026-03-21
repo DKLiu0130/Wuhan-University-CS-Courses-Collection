@@ -1,0 +1,4 @@
+let a = 5 in
+let b = 3 in
+let c = 2 in
+a + (b * c)
