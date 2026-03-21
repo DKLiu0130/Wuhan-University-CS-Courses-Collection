@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Jun 30 22:07:09 2025
+# Process ID: 22536
+# Current directory: C:/Users/Admin/Downloads/complex proj1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35712 C:\Users\Admin\Downloads\complex proj1\project_1\project_1.xpr
+# Log file: C:/Users/Admin/Downloads/complex proj1/project_1/vivado.log
+# Journal file: C:/Users/Admin/Downloads/complex proj1/project_1\vivado.jou
+# Running On: kyz, OS: Windows, CPU Frequency: 3072 MHz, CPU Physical cores: 16, Host memory: 33745 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Admin/Downloads/complex proj1/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+reset_run ROM_D_synth_1
+reset_run RAM_B_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 22
+wait_on_run synth_1
+launch_runs impl_1 -jobs 22
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Admin/Downloads/complex proj1/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Admin/Downloads/complex proj1/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 22
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 22
+wait_on_run synth_1
+launch_runs impl_1 -jobs 22
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 22
+wait_on_run impl_1

@@ -1,0 +1,5 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Documents/VivadoRepo/riscv/riscv.sim/sim_1/synth/func/xsim/riscv_func_synth.v,1733741938,verilog,,,,addr_controller;addr_controller__parameterized0;clk_divider;clk_divider__parameterized0;clk_divider__parameterized1;data_memory;disp_seg16x;dist_mem_im;dist_mem_im_dist_mem_gen_v8_0_12;dist_mem_im_dist_mem_gen_v8_0_12_synth;dist_mem_im_rom;dm_addr_controller;glbl;instruction_memory;pc;register_file;riscv,,,,,,,,

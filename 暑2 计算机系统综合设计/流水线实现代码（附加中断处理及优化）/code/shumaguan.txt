@@ -1,0 +1,11 @@
+add x1, x0, x0
+lui x2, 0x01000
+addi x31, x0, 0xe
+slli x18, x31, 28
+and x7, x7, x0
+addi x7, x7, 0xa
+slli x7, x7, 4
+sw x7, 0(x18)
+bne x1, x2, -12
+
+00e00f93 01cf9913 0003f3b3 00a38393 00439393 00792023

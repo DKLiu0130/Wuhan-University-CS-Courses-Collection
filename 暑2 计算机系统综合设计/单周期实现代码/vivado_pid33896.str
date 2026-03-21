@@ -1,0 +1,505 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 33896
+License: Customer
+
+Current time: 	Tue Jun 24 18:53:50 CST 2025
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 20
+
+Screen size: 3200x2000
+Screen resolution (DPI): 192
+Available screens: 1
+Available disk space: 25 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=24
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Lenovo
+User home directory: C:/Users/Lenovo
+User working directory: D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Lenovo/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Lenovo/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Lenovo/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv/vivado.log
+Vivado journal file location: 	D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv/vivado.jou
+Engine tmp dir: 	D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv/.Xil/Vivado-33896-LAPTOP-IGLTMBSE
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 629 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1586 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 100 MB (+102799kb) [00:00:17]
+// [Engine Memory]: 620 MB (+498145kb) [00:00:17]
+// Opening Vivado Project: D:\大学\大三上\第三学期\计算机系统综合设计\计组实验课材料\2023302121009 刘鼎琨 计算机组成原理实验材料\riscv\riscv.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv/riscv.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv' 
+// HMemoryUtils.trashcanNow. Engine heap size: 650 MB. GUI used memory: 67 MB. Current time: 6/24/25, 6:53:52 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 751 MB (+105126kb) [00:00:34]
+// [GUI Memory]: 109 MB (+3226kb) [00:00:38]
+// [GUI Memory]: 126 MB (+12110kb) [00:00:38]
+// [Engine Memory]: 788 MB (+145kb) [00:00:38]
+// WARNING: HEventQueue.dispatchEvent() is taking  8464 ms.
+// Tcl Message: open_project {D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv/riscv.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv' INFO: [Project 1-313] Project file moved from 'D:/Xilinx/nexys/pj/riscv' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 797 MB. GUI used memory: 73 MB. Current time: 6/24/25, 6:54:13 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1779 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:22 . Memory (MB): peak = 840.414 ; gain = 169.742 
+// Project name: riscv; location: D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv; part: xc7a100tcsg324-1
+// [Engine Memory]: 845 MB (+17846kb) [00:00:45]
+dismissDialog("Open Project"); // bx (cp)
+// a (cp): Critical Messages: addNotify
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 405ms to process. Increasing delay to 3000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HTimer (StateMonitor Timer) is taking 607ms to process. Increasing delay to 4000 ms.
+// [GUI Memory]: 134 MB (+2661kb) [00:18:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 876 MB. GUI used memory: 73 MB. Current time: 6/24/25, 7:24:15 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 876 MB. GUI used memory: 69 MB. Current time: 6/24/25, 7:54:17 PM CST
+// Elapsed time: 4725 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 8); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // B (D, cp)
+// PAPropertyPanels.initPanels (icf.xdc) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, icf.xdc]", 6, false); // B (D, cp)
+// [Engine Memory]: 908 MB (+21361kb) [01:19:39]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, icf.xdc]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// ad (cp): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a (ad)
+dismissDialog("Unable to Open File"); // ad (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 916 MB. GUI used memory: 71 MB. Current time: 6/24/25, 8:13:14 PM CST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, riscv (riscv.v)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, riscv (riscv.v), div27 : clk_divider (riscv.v)]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 13 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ac (cp)
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // af (cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // X (q, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (cp): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2219 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 949 MB. GUI used memory: 65 MB. Current time: 6/24/25, 8:13:39 PM CST
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Display]", 3, false); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 6, true); // L (C, F) - Node
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 6); // L (C, F)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Fonts and Colors]", 10, false); // L (C, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 88 MB. Current time: 6/24/25, 8:13:59 PM CST
+// [Engine Memory]: 990 MB (+38606kb) [01:20:28]
+dismissDialog("Settings"); // F (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "riscv.v", 1); // k (j, cp)
+selectCodeEditor("riscv.v", 422, 336); // cl (w, cp)
+selectCodeEditor("riscv.v", 483, 305); // cl (w, cp)
+selectCodeEditor("riscv.v", 336, 268); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("riscv.v", 112, 516); // cl (w, cp)
+selectCodeEditor("riscv.v", 238, 294); // cl (w, cp)
+selectCodeEditor("riscv.v", 253, 311); // cl (w, cp)
+// Elapsed time: 644 seconds
+selectCodeEditor("riscv.v", 239, 232); // cl (w, cp)
+selectCodeEditor("riscv.v", 228, 333); // cl (w, cp)
+selectCodeEditor("riscv.v", 157, 258); // cl (w, cp)
+selectCodeEditor("riscv.v", 143, 248); // cl (w, cp)
+selectCodeEditor("riscv.v", 143, 240); // cl (w, cp)
+selectCodeEditor("riscv.v", 143, 240, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 144, 240, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectCodeEditor("riscv.v", 134, 263, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(PAResourceOtoP.PACodeEditor_FIND_IN_FILES, "Find in Files..."); // af (al, Popup.HeavyWeightWindow)
+// Find in Files: addNotify
+selectCheckBox((HResource) null, "Match whole word", true); // JCheckBox (t, s): TRUE
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // x (s)
+// bx (cp):  Find in Files : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 98 MB. Current time: 6/24/25, 8:25:36 PM CST
+// 'f' command handler elapsed time: 5 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 96 MB. Current time: 6/24/25, 8:25:37 PM CST
+dismissDialog("Find in Files"); // bx (cp)
+expandTree(PAResourceEtoH.FindInFilesView_ROOT, "[ROOT]", 1); // Y (Q, cp)
+selectCodeEditor("riscv.v", 219, 573); // cl (w, cp)
+selectCodeEditor("riscv.v", 158, 422); // cl (w, cp)
+selectCodeEditor("riscv.v", 190, 426); // cl (w, cp)
+selectCodeEditor("riscv.v", 190, 426, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 242, 426); // cl (w, cp)
+selectCodeEditor("riscv.v", 245, 426, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 306, 424); // cl (w, cp)
+selectCodeEditor("riscv.v", 306, 424, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 396, 425); // cl (w, cp)
+selectCodeEditor("riscv.v", 396, 425, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 293, 416); // cl (w, cp)
+selectCodeEditor("riscv.v", 217, 411); // cl (w, cp)
+selectCodeEditor("riscv.v", 217, 411, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 247, 414); // cl (w, cp)
+selectCodeEditor("riscv.v", 250, 416, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 335, 414); // cl (w, cp)
+selectCodeEditor("riscv.v", 335, 414, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 178, 405); // cl (w, cp)
+selectCodeEditor("riscv.v", 177, 405, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 222, 407); // cl (w, cp)
+selectCodeEditor("riscv.v", 267, 407); // cl (w, cp)
+selectCodeEditor("riscv.v", 267, 407, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 377, 420); // cl (w, cp)
+selectCodeEditor("riscv.v", 377, 420, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 399, 473); // cl (w, cp)
+selectCodeEditor("riscv.v", 399, 473, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 271, 316); // cl (w, cp)
+selectCodeEditor("riscv.v", 271, 316, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 270, 310); // cl (w, cp)
+selectCodeEditor("riscv.v", 270, 310, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 270, 310); // cl (w, cp)
+selectCodeEditor("riscv.v", 8, 110); // cl (w, cp)
+selectCodeEditor("riscv.v", 4, 115); // cl (w, cp)
+selectCodeEditor("riscv.v", 29, 187); // cl (w, cp)
+selectCodeEditor("riscv.v", 78, 175); // cl (w, cp)
+selectCodeEditor("riscv.v", 82, 175, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 226, 175); // cl (w, cp)
+selectCodeEditor("riscv.v", 226, 175, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 135, 177); // cl (w, cp)
+selectCodeEditor("riscv.v", 135, 177, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 220, 175); // cl (w, cp)
+selectCodeEditor("riscv.v", 220, 175, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 114, 175); // cl (w, cp)
+selectCodeEditor("riscv.v", 114, 175, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 246, 178); // cl (w, cp)
+selectCodeEditor("riscv.v", 246, 178, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 394, 180); // cl (w, cp)
+selectCodeEditor("riscv.v", 394, 180, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 346, 197); // cl (w, cp)
+selectCodeEditor("riscv.v", 346, 197, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 458, 177); // cl (w, cp)
+selectCodeEditor("riscv.v", 458, 177, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 557, 180); // cl (w, cp)
+selectCodeEditor("riscv.v", 560, 181, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 305, 206); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("riscv.v", 136, 285); // cl (w, cp)
+selectCodeEditor("riscv.v", 136, 286, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 15, 278); // cl (w, cp)
+selectCodeEditor("riscv.v", 15, 278, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 206, 306); // cl (w, cp)
+selectCodeEditor("riscv.v", 158, 275); // cl (w, cp)
+selectCodeEditor("riscv.v", 158, 275, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 356, 313); // cl (w, cp)
+selectCodeEditor("riscv.v", 232, 276); // cl (w, cp)
+selectCodeEditor("riscv.v", 232, 276, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 338, 289); // cl (w, cp)
+selectCodeEditor("riscv.v", 338, 289, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 175, 274); // cl (w, cp)
+selectCodeEditor("riscv.v", 175, 274, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 324, 256); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, riscv (riscv.v), u_pc : pc (pc.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, riscv (riscv.v), u_pc : pc (pc.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, riscv (riscv.v), u_pc : pc (pc.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// [GUI Memory]: 150 MB (+9691kb) [01:33:21]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "riscv.v", 1); // k (j, cp)
+selectCodeEditor("riscv.v", 319, 429); // cl (w, cp)
+selectCodeEditor("riscv.v", 318, 430, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 88, 317); // cl (w, cp)
+selectCodeEditor("riscv.v", 88, 317, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 9, 323); // cl (w, cp)
+selectCodeEditor("riscv.v", 155, 316); // cl (w, cp)
+selectCodeEditor("riscv.v", 155, 316, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 155, 316); // cl (w, cp)
+selectCodeEditor("riscv.v", 155, 316, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 158, 314); // cl (w, cp)
+selectCodeEditor("riscv.v", 158, 314, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 63, 420); // cl (w, cp)
+selectCodeEditor("riscv.v", 68, 415); // cl (w, cp)
+selectCodeEditor("riscv.v", 68, 415, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 84, 424); // cl (w, cp)
+selectCodeEditor("riscv.v", 84, 424, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 25, 436); // cl (w, cp)
+selectCodeEditor("riscv.v", 25, 436, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 34, 424); // cl (w, cp)
+selectCodeEditor("riscv.v", 34, 424, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 34, 424); // cl (w, cp)
+selectCodeEditor("riscv.v", 34, 424, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 28, 462); // cl (w, cp)
+selectCodeEditor("riscv.v", 31, 447); // cl (w, cp)
+selectCodeEditor("riscv.v", 31, 447, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 31, 447); // cl (w, cp)
+selectCodeEditor("riscv.v", 31, 447); // cl (w, cp)
+selectCodeEditor("riscv.v", 31, 447, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 31, 447); // cl (w, cp)
+selectCodeEditor("riscv.v", 42, 427); // cl (w, cp)
+selectCodeEditor("riscv.v", 42, 427, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 62 seconds
+selectCodeEditor("riscv.v", 195, 419); // cl (w, cp)
+selectCodeEditor("riscv.v", 195, 419, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 110, 305); // cl (w, cp)
+selectCodeEditor("riscv.v", 110, 305, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("riscv.v", 67, 303); // cl (w, cp)
+selectCodeEditor("riscv.v", 67, 303, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pc.v", 2); // k (j, cp)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "riscv.v", 1); // k (j, cp)
+selectCodeEditor("riscv.v", 684, 443); // cl (w, cp)
+selectCodeEditor("riscv.v", 684, 443, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pc.v", 2); // k (j, cp)
+selectCodeEditor("pc.v", 545, 530); // cl (w, cp)
+selectCodeEditor("pc.v", 545, 530, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 598, 537); // cl (w, cp)
+selectCodeEditor("pc.v", 595, 533, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 670, 474); // cl (w, cp)
+selectCodeEditor("pc.v", 670, 474, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 326, 462); // cl (w, cp)
+selectCodeEditor("pc.v", 326, 462, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 505, 491); // cl (w, cp)
+selectCodeEditor("pc.v", 505, 491, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 688, 491); // cl (w, cp)
+selectCodeEditor("pc.v", 688, 491, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 949, 447); // cl (w, cp)
+selectCodeEditor("pc.v", 949, 447, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 1154, 482); // cl (w, cp)
+selectCodeEditor("pc.v", 1154, 482, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 1331, 496); // cl (w, cp)
+selectCodeEditor("pc.v", 1331, 496, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 1117, 488); // cl (w, cp)
+selectCodeEditor("pc.v", 1117, 488, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 887, 492); // cl (w, cp)
+selectCodeEditor("pc.v", 887, 495, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 529, 515); // cl (w, cp)
+selectCodeEditor("pc.v", 529, 515, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 529, 492); // cl (w, cp)
+selectCodeEditor("pc.v", 529, 492, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 734, 492); // cl (w, cp)
+selectCodeEditor("pc.v", 734, 492, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 699, 488); // cl (w, cp)
+selectCodeEditor("pc.v", 771, 486); // cl (w, cp)
+selectCodeEditor("pc.v", 771, 486, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 971, 494); // cl (w, cp)
+selectCodeEditor("pc.v", 971, 494, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 1198, 500); // cl (w, cp)
+selectCodeEditor("pc.v", 1198, 500, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 1379, 494); // cl (w, cp)
+selectCodeEditor("pc.v", 1379, 494, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("pc.v", 264, 540); // cl (w, cp)
+selectCodeEditor("pc.v", 239, 531); // cl (w, cp)
+selectCodeEditor("pc.v", 717, 549); // cl (w, cp)
+selectCodeEditor("pc.v", 734, 545); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 98 MB. Current time: 6/24/25, 8:55:38 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  495195 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8460911 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 97 MB. Current time: 6/24/25, 11:26:13 PM CST
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 8461527 ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2362 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1298 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6765 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1172965 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1640 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5895064 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 1:25:38 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1455 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5679455 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 3:01:08 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1402 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1760714 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 95 MB. Current time: 6/25/25, 3:33:49 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1641 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7110618 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 5:33:03 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1352 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3501296 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 95 MB. Current time: 6/25/25, 6:32:19 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  8358560 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 8:52:16 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1169 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3489166 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 9:51:16 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1499 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3543775 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 10:51:16 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1359 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2610549 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 11:35:39 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 12:05:41 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 12:35:44 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 1:05:47 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 1:35:50 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 2:05:53 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 2:35:56 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 3:05:58 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 3:36:01 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 4:06:04 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 4:36:07 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 5:06:10 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  468754 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 468803 ms. Increasing delay to 1406409 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  601577 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 95 MB. Current time: 6/25/25, 5:37:17 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1595 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2894 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1693 ms. Increasing delay to 4000 ms.
+// Elapsed time: 76335 seconds
+selectCodeEditor("pc.v", 583, 446); // cl (w, cp)
+selectCodeEditor("pc.v", 292, 230); // cl (w, cp)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 35 ms. Decreasing delay to 2035 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 95 MB. Current time: 6/25/25, 6:07:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 6:37:20 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 7:07:23 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 7:37:26 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  127945 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9394153 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 95 MB. Current time: 6/25/25, 10:30:56 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1282 ms. Increasing delay to 3846 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2484 ms. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 11:00:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/25/25, 11:31:01 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/26/25, 12:01:04 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/26/25, 12:31:07 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 94 MB. Current time: 6/26/25, 1:01:10 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 1:31:13 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 2:01:15 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 2:31:17 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 3:01:18 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 3:31:20 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 4:01:22 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 4:31:24 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 5:01:26 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 5:31:28 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 6:01:30 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 6:31:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 7:01:33 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 7:31:35 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 8:01:37 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 8:31:39 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 9:01:41 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 9:31:43 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 10:01:45 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 10:31:48 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 11:01:51 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 11:31:53 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 12:01:56 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 12:31:59 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 1:02:02 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 1:32:05 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 2:02:08 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 2:32:10 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 3:02:13 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 3:32:16 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 4:02:19 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 4:32:22 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 5:02:24 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  4486 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  70315 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 5:32:45 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  6054740 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 7:13:44 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1233 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 7:43:45 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 8:13:48 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 8:43:51 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 9:13:54 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  423641 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 72 MB. Current time: 6/26/25, 9:45:56 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  4466 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7109904 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/26/25, 11:44:27 PM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7110922 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1156 ms to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 12:14:30 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 12:44:32 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 1:14:35 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 1:44:38 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 2:14:41 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 2:44:43 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 3:14:46 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 3:44:49 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 4:14:52 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 4:44:54 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 5:14:57 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 5:45:00 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 6:15:03 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 6:45:05 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 7:15:08 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 7:45:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 8:15:14 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 8:45:16 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 9:15:19 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 9:45:22 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 10:15:25 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 10:45:28 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 11:15:30 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 11:45:33 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 12:15:36 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 12:45:39 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 1:15:42 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 1:45:44 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 2:15:47 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 2:45:50 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 3:15:53 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 3:45:56 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 4:15:58 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 4:46:01 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 5:16:04 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1305127 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2102 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 990 MB. GUI used memory: 71 MB. Current time: 6/27/25, 5:46:05 PM CST

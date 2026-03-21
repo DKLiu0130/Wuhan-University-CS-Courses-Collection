@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Jul  1 16:25:49 2025
+# Process ID: 23928
+# Current directory: C:/Users/Admin/Downloads/complex proj1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent38132 C:\Users\Admin\Downloads\complex proj1\project_1\project_1.xpr
+# Log file: C:/Users/Admin/Downloads/complex proj1/project_1/vivado.log
+# Journal file: C:/Users/Admin/Downloads/complex proj1/project_1\vivado.jou
+# Running On: kyz, OS: Windows, CPU Frequency: 3072 MHz, CPU Physical cores: 16, Host memory: 33745 MB
+#-----------------------------------------------------------
+start_guioopen_project {C:/Users/Admin/Downloads/complex proj1/project_1/project_1.xpr}uupdate_compile_order -fileset sources_1
+reset_run ROM_D_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 22
+launch_runs synth_1 -jobs 22

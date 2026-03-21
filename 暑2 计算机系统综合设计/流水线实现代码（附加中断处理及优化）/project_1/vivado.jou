@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Jul  1 19:39:42 2025
+# Process ID: 10696
+# Current directory: D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28268 D:\大学\大三上\第三学期\计算机系统综合设计\complex proj1\project_1\project_1.xpr
+# Log file: D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/vivado.log
+# Journal file: D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1\vivado.jou
+# Running On: LAPTOP-IGLTMBSE, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 14, Host memory: 34070 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.xpr}
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager
+reset_run ROM_D_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 20
+wait_on_run synth_1

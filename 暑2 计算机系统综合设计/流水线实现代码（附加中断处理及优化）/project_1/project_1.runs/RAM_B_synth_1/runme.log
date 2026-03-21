@@ -1,0 +1,26 @@
+
+*** Running vivado
+    with args -log RAM_B.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RAM_B.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source RAM_B.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 483.816 ; gain = 178.766
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: RAM_B
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 39d4c6c630cd9aac to dir: C:/Users/Admin/Downloads/complex proj1/project_1/project_1.runs/RAM_B_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Admin/Downloads/complex proj1/project_1/project_1.cache/ip/2023.2/3/9/39d4c6c630cd9aac/RAM_B.dcp to C:/Users/Admin/Downloads/complex proj1/project_1/project_1.runs/RAM_B_synth_1/RAM_B.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Admin/Downloads/complex proj1/project_1/project_1.cache/ip/2023.2/3/9/39d4c6c630cd9aac/RAM_B_sim_netlist.v to C:/Users/Admin/Downloads/complex proj1/project_1/project_1.runs/RAM_B_synth_1/RAM_B_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Admin/Downloads/complex proj1/project_1/project_1.cache/ip/2023.2/3/9/39d4c6c630cd9aac/RAM_B_sim_netlist.vhdl to C:/Users/Admin/Downloads/complex proj1/project_1/project_1.runs/RAM_B_synth_1/RAM_B_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Admin/Downloads/complex proj1/project_1/project_1.cache/ip/2023.2/3/9/39d4c6c630cd9aac/RAM_B_stub.v to C:/Users/Admin/Downloads/complex proj1/project_1/project_1.runs/RAM_B_synth_1/RAM_B_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Admin/Downloads/complex proj1/project_1/project_1.cache/ip/2023.2/3/9/39d4c6c630cd9aac/RAM_B_stub.vhdl to C:/Users/Admin/Downloads/complex proj1/project_1/project_1.runs/RAM_B_synth_1/RAM_B_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP RAM_B, cache-ID = 39d4c6c630cd9aac.
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 30 22:09:01 2025...

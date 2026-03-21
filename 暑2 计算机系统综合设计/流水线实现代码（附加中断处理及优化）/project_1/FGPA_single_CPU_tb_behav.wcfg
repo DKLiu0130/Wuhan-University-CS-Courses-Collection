@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="FGPA_single_CPU_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="FGPA_single_CPU_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="15.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="40.394813 us"></ZoomEndTime>
+      <Cursor1Time time="32.288079 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="266"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_PC/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/inst_in" type="array">
+      <obj_property name="ElementShortName">inst_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">inst_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U11_int_controller/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U11_int_controller/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U11_int_controller/INT" type="logic">
+      <obj_property name="ElementShortName">INT</obj_property>
+      <obj_property name="ObjectShortName">INT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U11_int_controller/cause" type="array">
+      <obj_property name="ElementShortName">cause[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cause[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U11_int_controller/btn_i_input" type="array">
+      <obj_property name="ElementShortName">btn_i_input[4:0][1:0]</obj_property>
+      <obj_property name="ObjectShortName">btn_i_input[4:0][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U11_int_controller/count_input" type="array">
+      <obj_property name="ElementShortName">count_input[1:0]</obj_property>
+      <obj_property name="ObjectShortName">count_input[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_int_judger/int_ret" type="logic">
+      <obj_property name="ElementShortName">int_ret</obj_property>
+      <obj_property name="ObjectShortName">int_ret</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_int_judger/INT" type="logic">
+      <obj_property name="ElementShortName">INT</obj_property>
+      <obj_property name="ObjectShortName">INT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_int_judger/cause" type="array">
+      <obj_property name="ElementShortName">cause[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cause[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_int_judger/is_int" type="logic">
+      <obj_property name="ElementShortName">is_int</obj_property>
+      <obj_property name="ObjectShortName">is_int</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_int_judger/curr_cause" type="array">
+      <obj_property name="ElementShortName">curr_cause[31:0]</obj_property>
+      <obj_property name="ObjectShortName">curr_cause[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_int_judger/mpc" type="array">
+      <obj_property name="ElementShortName">mpc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mpc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_int_judger/btn_time" type="array">
+      <obj_property name="ElementShortName">btn_time[31:0]</obj_property>
+      <obj_property name="ObjectShortName">btn_time[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_int_judger/count_time" type="array">
+      <obj_property name="ElementShortName">count_time[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count_time[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_int_judger/cause_judge" type="array">
+      <obj_property name="ElementShortName">cause_judge[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cause_judge[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_int_judger/int_addr" type="array">
+      <obj_property name="ElementShortName">int_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">int_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_int_judger/INT_judge" type="logic">
+      <obj_property name="ElementShortName">INT_judge</obj_property>
+      <obj_property name="ObjectShortName">INT_judge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/int_sig" type="logic">
+      <obj_property name="ElementShortName">int_sig</obj_property>
+      <obj_property name="ObjectShortName">int_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_NPC/NPCOp_in" type="array">
+      <obj_property name="ElementShortName">NPCOp_in[2:0]</obj_property>
+      <obj_property name="ObjectShortName">NPCOp_in[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U8_clk_div/clkdiv" type="array">
+      <obj_property name="ElementShortName">clkdiv[31:0]</obj_property>
+      <obj_property name="ObjectShortName">clkdiv[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/int_ret" type="logic">
+      <obj_property name="ElementShortName">int_ret</obj_property>
+      <obj_property name="ObjectShortName">int_ret</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/IF_ID_int_ret" type="logic">
+      <obj_property name="ElementShortName">IF_ID_int_ret</obj_property>
+      <obj_property name="ObjectShortName">IF_ID_int_ret</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/ID_EX_int_ret" type="logic">
+      <obj_property name="ElementShortName">ID_EX_int_ret</obj_property>
+      <obj_property name="ObjectShortName">ID_EX_int_ret</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/EX_MEM_int_ret" type="logic">
+      <obj_property name="ElementShortName">EX_MEM_int_ret</obj_property>
+      <obj_property name="ObjectShortName">EX_MEM_int_ret</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/MEM_WB_int_ret" type="logic">
+      <obj_property name="ElementShortName">MEM_WB_int_ret</obj_property>
+      <obj_property name="ObjectShortName">MEM_WB_int_ret</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/IF_ID_PC_out" type="array">
+      <obj_property name="ElementShortName">IF_ID_PC_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IF_ID_PC_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/EX_MEM_PC_out" type="array">
+      <obj_property name="ElementShortName">EX_MEM_PC_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_MEM_PC_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/ID_EX_PC_out" type="array">
+      <obj_property name="ElementShortName">ID_EX_PC_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_EX_PC_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/MEM_WB_PC_out" type="array">
+      <obj_property name="ElementShortName">MEM_WB_PC_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM_WB_PC_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_NPC/NPC" type="array">
+      <obj_property name="ElementShortName">NPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NPC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_NPC/int_sig" type="logic">
+      <obj_property name="ElementShortName">int_sig</obj_property>
+      <obj_property name="ObjectShortName">int_sig</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_NPC/int_addr" type="array">
+      <obj_property name="ElementShortName">int_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">int_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FGPA_single_CPU_tb/xgriscv/U1_SCPU/U_NPC/NPCOp_in" type="array">
+      <obj_property name="ElementShortName">NPCOp_in[2:0]</obj_property>
+      <obj_property name="ObjectShortName">NPCOp_in[2:0]</obj_property>
+   </wvobject>
+</wave_config>

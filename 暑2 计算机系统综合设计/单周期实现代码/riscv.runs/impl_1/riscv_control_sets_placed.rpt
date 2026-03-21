@@ -1,0 +1,119 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Dec 11 17:04:53 2024
+| Host         : WIN-T6A1S95DRJ2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file riscv_control_sets_placed.rpt
+| Design       : riscv
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    47 |
+| Unused register locations in slices containing registers |   176 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      2 |            1 |
+|      3 |            2 |
+|      4 |            1 |
+|      5 |            2 |
+|      8 |            1 |
+|     10 |            8 |
+|     11 |           13 |
+|    16+ |           17 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             184 |           84 |
+| No           | No                    | Yes                    |            1536 |         1159 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             232 |          100 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------+------------------------------------+------------------+----------------+
+|  Clock Signal  |     Enable Signal    |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------+----------------------+------------------------------------+------------------+----------------+
+|  clk_addr_BUFG | u_rf_addr/p_0_in     | u_rf/rstn_0                        |                1 |              1 |
+|  clk_addr_BUFG | u_rf_addr/p_0_in     | u_dm/rstn                          |                1 |              1 |
+|  clk_addr_BUFG | u_rf_addr/p_0_in     | u_rf/rstn_1                        |                1 |              2 |
+|  clk_addr_BUFG |                      | u_dm/rstn                          |                1 |              3 |
+|  div12/O551    |                      |                                    |                2 |              3 |
+|  clk_used_BUFG |                      | u_rf/register_file[31][24]_i_2_n_0 |                1 |              4 |
+|  clk_addr_BUFG | u_rf_addr/p_0_in     | u_rf/rstn                          |                2 |              5 |
+|  clk_used_BUFG |                      | u_rf/rstn                          |                2 |              5 |
+|  clk_used_BUFG |                      | u_rf/rstn_1                        |                2 |              8 |
+|  clk_used_BUFG | u_im/bbstub_spo[8]_1 | u_rf/rstn                          |                5 |             10 |
+|  clk_used_BUFG | u_im/bbstub_spo[8]_0 | u_rf/rstn                          |                5 |             10 |
+|  clk_used_BUFG | u_im/bbstub_spo[7]_0 | u_rf/rstn                          |                2 |             10 |
+|  clk_used_BUFG | u_im/bbstub_spo[7]_1 | u_rf/rstn                          |                3 |             10 |
+|  clk_used_BUFG | u_im/bbstub_spo[9]_1 | u_rf/rstn                          |                3 |             10 |
+|  clk_used_BUFG | u_im/bbstub_spo[8]   | u_rf/rstn                          |                3 |             10 |
+|  clk_used_BUFG | u_im/bbstub_spo[8]   | u_rf/rstn_1                        |                6 |             10 |
+|  clk_used_BUFG | u_im/bbstub_spo[7]_2 | u_rf/rstn                          |                5 |             10 |
+|  clk_used_BUFG | u_im/bbstub_spo[7]_2 | u_rf/rstn_1                        |                4 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[8]   | u_rf/rstn_0                        |                7 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[9]_1 | u_rf/rstn_0                        |                5 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[9]_1 | u_rf/rstn_1                        |                7 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[7]_1 | u_rf/rstn_0                        |                5 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[7]_1 | u_rf/rstn_1                        |                7 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[8]_0 | u_rf/rstn_0                        |                4 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[7]_0 | u_rf/rstn_0                        |                4 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[7]_0 | u_rf/rstn_1                        |                3 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[8]_0 | u_rf/rstn_1                        |                3 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[8]_1 | u_rf/rstn_0                        |                6 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[8]_1 | u_rf/rstn_1                        |                4 |             11 |
+|  clk_used_BUFG | u_im/bbstub_spo[7]_2 | u_rf/rstn_0                        |                4 |             11 |
+|  clk_used_BUFG |                      | u_rf/rstn_0                        |                8 |             17 |
+|  clk_addr_BUFG |                      |                                    |               25 |             40 |
+|  clk_used_BUFG |                      | u_rf/register_file[31][20]_i_2_n_0 |               14 |             48 |
+|  clk_IBUF_BUFG |                      |                                    |               18 |             69 |
+| ~clk_used_BUFG |                      |                                    |               39 |             72 |
+|  clk_used_BUFG |                      | u_rf/register_file[31][9]_i_2_n_0  |               22 |             73 |
+|  clk_used_BUFG |                      | u_rf/register_file[22][10]_i_2_n_0 |               29 |            118 |
+|  clk_used_BUFG |                      | u_rf/register_file[26][20]_i_2_n_0 |               30 |            118 |
+|  clk_used_BUFG |                      | u_rf/register_file[31][28]_i_2_n_0 |               29 |            118 |
+|  clk_used_BUFG |                      | u_dm/dmem[127][3]_P_i_1_n_0        |              128 |            128 |
+|  clk_used_BUFG |                      | u_dm/dmem[127][4]_P_i_1_n_0        |              127 |            128 |
+|  clk_used_BUFG |                      | u_dm/dmem[127][6]_P_i_1_n_0        |              128 |            128 |
+|  clk_used_BUFG |                      | u_dm/dmem[127][0]_P_i_1_n_0        |              128 |            128 |
+|  clk_used_BUFG |                      | u_dm/dmem[127][7]_C_i_1_n_0        |              128 |            128 |
+|  clk_used_BUFG |                      | u_dm/dmem[127][5]_P_i_1_n_0        |              127 |            128 |
+|  clk_used_BUFG |                      | u_dm/dmem[127][2]_P_i_1_n_0        |              128 |            128 |
+|  clk_used_BUFG |                      | u_dm/dmem[127][1]_P_i_1_n_0        |              127 |            128 |
++----------------+----------------------+------------------------------------+------------------+----------------+
+
+

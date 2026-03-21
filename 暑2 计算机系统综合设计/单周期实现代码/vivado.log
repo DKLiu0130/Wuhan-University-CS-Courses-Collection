@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun 24 18:53:15 2025
+# Process ID: 33896
+# Current directory: D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent35304 D:\大学\大三上\第三学期\计算机系统综合设计\计组实验课材料\2023302121009 刘鼎琨 计算机组成原理实验材料\riscv\riscv.xpr
+# Log file: D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv/vivado.log
+# Journal file: D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv/riscv.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/大学/大三上/第三学期/计算机系统综合设计/计组实验课材料/2023302121009 刘鼎琨 计算机组成原理实验材料/riscv'
+INFO: [Project 1-313] Project file moved from 'D:/Xilinx/nexys/pj/riscv' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/大学/大三上/第三学期/计算机系统综合设计/Vivado/icf.xdc', nor could it be found using path 'D:/Xilinx/Vivado/icf.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:22 . Memory (MB): peak = 840.414 ; gain = 169.742
+update_compile_order -fileset sources_1

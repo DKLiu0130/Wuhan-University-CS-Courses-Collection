@@ -1,0 +1,193 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 484.684 ; gain = 177.980
+Command: read_checkpoint -auto_incremental -incremental {D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/utils_1/imports/synth_1/top.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14468
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1348.656 ; gain = 441.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'GPIOf0000000_we', assumed default net type 'wire' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/top.v:98]
+INFO: [Synth 8-11241] undeclared symbol 'GPIOe0000000_we', assumed default net type 'wire' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/top.v:135]
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'Enter' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Enter.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Enter' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Enter.v:21]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/clk_div.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/clk_div.v:2]
+INFO: [Synth 8-6157] synthesizing module 'SPIO' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/SPIO.v:15]
+WARNING: [Synth 8-7071] port 'GPIOf0' of module 'SPIO' is unconnected for instance 'U7_SPIO' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/top.v:97]
+WARNING: [Synth 8-7023] instance 'U7_SPIO' of module 'SPIO' has 8 connections declared, but only 7 given [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/top.v:97]
+INFO: [Synth 8-6157] synthesizing module 'dm_controller' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/dm_controller.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/dm_controller.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'dm_controller' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/dm_controller.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ROM_D' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.runs/synth_1/.Xil/Vivado-22156-LAPTOP-IGLTMBSE/realtime/ROM_D_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_D' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.runs/synth_1/.Xil/Vivado-22156-LAPTOP-IGLTMBSE/realtime/ROM_D_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Counter_x' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Counter_3_IO.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Counter_x' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Counter_3_IO.v:21]
+WARNING: [Synth 8-7071] port 'counter_out' of module 'Counter_x' is unconnected for instance 'U9_Counter_x' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/top.v:113]
+WARNING: [Synth 8-7023] instance 'U9_Counter_x' of module 'Counter_x' has 12 connections declared, but only 11 given [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/top.v:113]
+INFO: [Synth 8-6157] synthesizing module 'RAM_B' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.runs/synth_1/.Xil/Vivado-22156-LAPTOP-IGLTMBSE/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_B' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.runs/synth_1/.Xil/Vivado-22156-LAPTOP-IGLTMBSE/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SCPU' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/SCPU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'int_judger' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_judger.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'int_judger' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_judger.v:3]
+INFO: [Synth 8-6157] synthesizing module 'GRE_array' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/GRE_array.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'GRE_array' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/GRE_array.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Detect' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Detect.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Detect.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'Detect' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Detect.v:1]
+WARNING: [Synth 8-7071] port 'int_sig' of module 'Detect' is unconnected for instance 'U_Detect' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/SCPU.v:248]
+WARNING: [Synth 8-7023] instance 'U_Detect' of module 'Detect' has 6 connections declared, but only 5 given [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/SCPU.v:248]
+INFO: [Synth 8-6157] synthesizing module 'Stall' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Stall.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Stall' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Stall.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Forwarding' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Forwarding.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Forwarding' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Forwarding.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/PC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/PC.v:1]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/NPC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/NPC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/ctrl.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/ctrl.v:4]
+WARNING: [Synth 8-7071] port 'DMType' of module 'ctrl' is unconnected for instance 'U_ctrl' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/SCPU.v:309]
+WARNING: [Synth 8-7023] instance 'U_ctrl' of module 'ctrl' has 14 connections declared, but only 13 given [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/SCPU.v:309]
+INFO: [Synth 8-6157] synthesizing module 'EXT' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/EXT.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'EXT' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/EXT.v:2]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:2]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/alu.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/alu.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/alu.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/SCPU.v:407]
+INFO: [Synth 8-6155] done synthesizing module 'SCPU' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/SCPU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'MIO_BUS' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/MIO_BUS.V:15]
+WARNING: [Synth 8-7071] port 'PC' of module 'MIO_BUS' is unconnected for instance 'U4_MIO_BUS' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/top.v:131]
+WARNING: [Synth 8-7071] port 'data_ram_we' of module 'MIO_BUS' is unconnected for instance 'U4_MIO_BUS' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/top.v:131]
+WARNING: [Synth 8-7023] instance 'U4_MIO_BUS' of module 'MIO_BUS' has 22 connections declared, but only 20 given [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/top.v:131]
+INFO: [Synth 8-6157] synthesizing module 'Multi_8CH32' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Multi_8CH32.v:15]
+INFO: [Synth 8-6157] synthesizing module 'SSeg7' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/SSeg7.v:15]
+INFO: [Synth 8-6157] synthesizing module 'int_controller' [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_controller.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'int_controller' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_controller.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/top.v:24]
+WARNING: [Synth 8-6014] Unused sequential element counter1_Lock_reg was removed.  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Counter_3_IO.v:45]
+WARNING: [Synth 8-6014] Unused sequential element counter2_Lock_reg was removed.  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Counter_3_IO.v:45]
+WARNING: [Synth 8-6014] Unused sequential element M1_reg was removed.  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Counter_3_IO.v:50]
+WARNING: [Synth 8-6014] Unused sequential element M2_reg was removed.  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Counter_3_IO.v:51]
+WARNING: [Synth 8-7137] Register M0_reg in module Counter_x has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Counter_3_IO.v:49]
+WARNING: [Synth 8-7137] Register clr0_reg in module Counter_x has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Counter_3_IO.v:71]
+WARNING: [Synth 8-3848] Net counter1 in module/entity Counter_x does not have driver. [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Counter_3_IO.v:36]
+WARNING: [Synth 8-3848] Net counter2 in module/entity Counter_x does not have driver. [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/Counter_3_IO.v:36]
+WARNING: [Synth 8-7137] Register int_addr_reg in module int_judger has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_judger.v:180]
+WARNING: [Synth 8-7137] Register INT_judge_reg in module int_judger has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_judger.v:185]
+WARNING: [Synth 8-7137] Register mpc_reg in module int_judger has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_judger.v:180]
+WARNING: [Synth 8-7137] Register upper_int_reg in module int_judger has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_judger.v:188]
+WARNING: [Synth 8-7137] Register out_reg in module GRE_array has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/GRE_array.v:19]
+WARNING: [Synth 8-7137] Register out_int_reg in module GRE_array has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/GRE_array.v:27]
+WARNING: [Synth 8-3848] Net GPRSel in module/entity ctrl does not have driver. [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/ctrl.v:22]
+WARNING: [Synth 8-3848] Net DMType in module/entity ctrl does not have driver. [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/ctrl.v:21]
+WARNING: [Synth 8-7137] Register rf_reg[0] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:18]
+WARNING: [Synth 8-7137] Register rf_int_reg[31] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[30] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[29] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[28] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[27] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[26] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[25] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[24] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[23] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[22] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[21] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[20] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[19] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[18] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[17] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[16] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[15] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[14] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[13] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[12] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[11] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[10] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[9] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[8] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[7] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[6] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[5] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[4] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[3] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[2] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-7137] Register rf_int_reg[1] in module RF has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/RF.v:25]
+WARNING: [Synth 8-3848] Net CPU_MIO in module/entity SCPU does not have driver. [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/code/SCPU.v:17]
+WARNING: [Synth 8-6014] Unused sequential element btn_last_reg was removed.  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_controller.v:36]
+WARNING: [Synth 8-6014] Unused sequential element count_last_reg was removed.  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_controller.v:38]
+WARNING: [Synth 8-6014] Unused sequential element count_input_reg was removed.  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_controller.v:41]
+WARNING: [Synth 8-6014] Unused sequential element edge_st_reg was removed.  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_controller.v:53]
+WARNING: [Synth 8-6014] Unused sequential element edge_ed_reg was removed.  [D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.srcs/sources_1/new/int_controller.v:54]
+WARNING: [Synth 8-7129] Port INT_count in module int_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPRSel[1] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port GPRSel[0] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DMType[2] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DMType[1] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DMType[0] in module ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port int_sig in module Detect is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CPU_MIO in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MIO_ready in module SCPU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter1_OUT in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port counter2_OUT in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk1 in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk2 in module Counter_x is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[31] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[30] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[29] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[28] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[27] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[26] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[25] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[24] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[23] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[22] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[21] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[20] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[19] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[18] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[17] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[16] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[15] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[14] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[13] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[12] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[11] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[10] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[9] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[8] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[7] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[6] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[5] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[4] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[3] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Addr_in[2] in module dm_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module Enter is either unconnected or has no load
+TclStackFree: incorrect freePtr. Call out of sequence?

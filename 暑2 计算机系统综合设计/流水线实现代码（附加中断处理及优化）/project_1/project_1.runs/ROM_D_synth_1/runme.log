@@ -1,0 +1,26 @@
+
+*** Running vivado
+    with args -log ROM_D.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM_D.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source ROM_D.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 485.871 ; gain = 180.043
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ROM_D
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 8013a94184572e0f to dir: D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.runs/ROM_D_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.cache/ip/2023.2/8/0/8013a94184572e0f/ROM_D.dcp to D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.runs/ROM_D_synth_1/ROM_D.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.cache/ip/2023.2/8/0/8013a94184572e0f/ROM_D_sim_netlist.v to D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.runs/ROM_D_synth_1/ROM_D_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.cache/ip/2023.2/8/0/8013a94184572e0f/ROM_D_sim_netlist.vhdl to D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.runs/ROM_D_synth_1/ROM_D_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.cache/ip/2023.2/8/0/8013a94184572e0f/ROM_D_stub.v to D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.runs/ROM_D_synth_1/ROM_D_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file d:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.cache/ip/2023.2/8/0/8013a94184572e0f/ROM_D_stub.vhdl to D:/大学/大三上/第三学期/计算机系统综合设计/complex proj1/project_1/project_1.runs/ROM_D_synth_1/ROM_D_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ROM_D, cache-ID = 8013a94184572e0f.
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  1 19:44:58 2025...

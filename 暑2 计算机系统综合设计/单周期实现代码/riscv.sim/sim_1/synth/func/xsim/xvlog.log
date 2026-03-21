@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Documents/VivadoRepo/riscv/riscv.sim/sim_1/synth/func/xsim/riscv_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_controller
+INFO: [VRFC 10-311] analyzing module addr_controller__parameterized0
+INFO: [VRFC 10-311] analyzing module clk_divider
+INFO: [VRFC 10-311] analyzing module clk_divider__parameterized0
+INFO: [VRFC 10-311] analyzing module clk_divider__parameterized1
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-311] analyzing module disp_seg16x
+INFO: [VRFC 10-311] analyzing module dist_mem_im
+INFO: [VRFC 10-311] analyzing module dm_addr_controller
+INFO: [VRFC 10-311] analyzing module instruction_memory
+INFO: [VRFC 10-311] analyzing module pc
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-311] analyzing module riscv
+INFO: [VRFC 10-311] analyzing module dist_mem_im_dist_mem_gen_v8_0_12
+INFO: [VRFC 10-311] analyzing module dist_mem_im_dist_mem_gen_v8_0_12_synth
+INFO: [VRFC 10-311] analyzing module dist_mem_im_rom
+INFO: [VRFC 10-311] analyzing module glbl
