@@ -1,0 +1,4 @@
+build/
+*_test_db/
+.DS_Store
+*.zip

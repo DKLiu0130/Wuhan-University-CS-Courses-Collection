@@ -1,0 +1,38 @@
+
+  _____  __  __ _____  ____  
+ |  __ \|  \/  |  __ \|  _ \ 
+ | |__) | \  / | |  | | |_) |
+ |  _  /| |\/| | |  | |  _ < 
+ | | \ \| |  | | |__| | |_) |
+ |_|  \_\_|  |_|_____/|____/ 
+
+Welcome to RMDB!
+Type 'help;' for help.
+
+Waiting for new connection...
+Waiting for new connection...
+establish client connection, sockfd: 4
+Waiting for request...
+i_recvBytes: 54 
+ Read from client 4: create table grade (name char(4),id int,score float);
+Waiting for request...
+i_recvBytes: 44 
+ Read from client 4: insert into grade values ('Data', 1, 90.5);
+Waiting for request...
+i_recvBytes: 21 
+ Read from client 4: select * from grade;
+Waiting for request...
+i_recvBytes: 36 
+ Read from client 4: delete from grade where score > 90;
+Waiting for request...
+i_recvBytes: 21 
+ Read from client 4: select * from grade;
+Waiting for request...
+i_recvBytes: 5 
+ Client exit.
+Terminating current client_connection...
+The Server receive Crtl+C, will been closed
+Break from Server Listen Loop
+ Try to close all client-connection.
+ DB has been closed.
+Server shuts down.

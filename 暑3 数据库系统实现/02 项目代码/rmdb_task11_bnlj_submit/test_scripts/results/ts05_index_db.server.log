@@ -1,0 +1,46 @@
+
+  _____  __  __ _____  ____  
+ |  __ \|  \/  |  __ \|  _ \ 
+ | |__) | \  / | |  | | |_) |
+ |  _  /| |\/| | |  | |  _ < 
+ | | \ \| |  | | |__| | |_) |
+ |_|  \_\_|  |_|_____/|____/ 
+
+Welcome to RMDB!
+Type 'help;' for help.
+
+Waiting for new connection...
+Waiting for new connection...
+establish client connection, sockfd: 4
+Waiting for request...
+i_recvBytes: 49 
+ Read from client 4: create table warehouse (w_id int, name char(8));
+Waiting for request...
+i_recvBytes: 48 
+ Read from client 4: insert into warehouse values (10 , 'qweruiop');
+Waiting for request...
+i_recvBytes: 48 
+ Read from client 4: insert into warehouse values (534, 'asdfhjkl');
+Waiting for request...
+i_recvBytes: 30 
+ Read from client 4: create index warehouse(w_id);
+1
+Waiting for request...
+i_recvBytes: 45 
+ Read from client 4: insert into warehouse values (10, 'dupval');
+Error: duplicate key
+Waiting for request...
+i_recvBytes: 27 
+ Read from client 4: show index from warehouse;
+Waiting for request...
+i_recvBytes: 41 
+ Read from client 4: select * from warehouse where w_id = 10;
+Waiting for request...
+i_recvBytes: 5 
+ Client exit.
+Terminating current client_connection...
+The Server receive Crtl+C, will been closed
+Break from Server Listen Loop
+ Try to close all client-connection.
+ DB has been closed.
+Server shuts down.

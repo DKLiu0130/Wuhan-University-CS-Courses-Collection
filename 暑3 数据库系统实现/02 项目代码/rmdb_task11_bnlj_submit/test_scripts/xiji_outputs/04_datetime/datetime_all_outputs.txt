@@ -1,0 +1,19 @@
+===== test1_datetime_crud =====
+| id | time |
+| 1 | 2023-05-18 09:12:19 |
+| 2 | 2023-05-30 12:34:32 |
+| id | time |
+| 2023 | 2023-05-18 09:12:19 |
+
+===== test2_datetime_validation =====
+| time | temperature |
+| 1999-07-07 12:30:00 | 36.000000 |
+failure
+failure
+failure
+failure
+failure
+failure
+failure
+| time | temperature |
+| 1999-07-07 12:30:00 | 36.000000 |

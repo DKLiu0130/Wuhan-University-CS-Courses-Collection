@@ -1,0 +1,15 @@
+| name | id | score |
+| Data | 1 | 90.500000 |
+| Data | 2 | 95.000000 |
+| Calc | 2 | 92.000000 |
+| Calc | 1 | 88.500000 |
+| score | name | id |
+| 90.500000 | Data | 1 |
+| 95.000000 | Data | 2 |
+| 92.000000 | Calc | 2 |
+| id |
+| 1 |
+| 2 |
+| name |
+| Data |
+| Calc |

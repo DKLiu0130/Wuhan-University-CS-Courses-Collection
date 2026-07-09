@@ -1,0 +1,5 @@
+﻿documents=297
+unique_terms=236192
+posting_pairs=2451950
+reference=data/reference_index.tsv
+manifest=data/books_manifest.tsv

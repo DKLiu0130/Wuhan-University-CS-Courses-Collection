@@ -1,0 +1,45 @@
+# Task 1 Storage Unit Test
+
+| Test | Result | Detail |
+|---|---:|---|
+| unit_test exits successfully | PASS | return code 0 |
+
+## Output
+
+```text
+Running main() from /root/workspace/datalab/db2023/rmdb/deps/googletest/googletest/src/gtest_main.cc
+[==========] Running 5 tests from 5 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from LRUReplacerTest
+[ RUN      ] LRUReplacerTest.SampleTest
+[       OK ] LRUReplacerTest.SampleTest (0 ms)
+[----------] 1 test from LRUReplacerTest (0 ms total)
+
+[----------] 1 test from BufferPoolManagerTest
+[ RUN      ] BufferPoolManagerTest.SampleTest
+[       OK ] BufferPoolManagerTest.SampleTest (0 ms)
+[----------] 1 test from BufferPoolManagerTest (1 ms total)
+
+[----------] 1 test from BufferPoolManagerConcurrencyTest
+[ RUN      ] BufferPoolManagerConcurrencyTest.ConcurrencyTest
+[       OK ] BufferPoolManagerConcurrencyTest.ConcurrencyTest (115 ms)
+[----------] 1 test from BufferPoolManagerConcurrencyTest (115 ms total)
+
+[----------] 1 test from StorageTest
+[ RUN      ] StorageTest.SimpleTest
+[       OK ] StorageTest.SimpleTest (1119 ms)
+[----------] 1 test from StorageTest (1119 ms total)
+
+[----------] 1 test from RecordManagerTest
+[ RUN      ] RecordManagerTest.SimpleTest
+insert 452
+delete 300
+update 248
+[       OK ] RecordManagerTest.SimpleTest (1032 ms)
+[----------] 1 test from RecordManagerTest (1032 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 5 test suites ran. (2268 ms total)
+[  PASSED  ] 5 tests.
+
+```

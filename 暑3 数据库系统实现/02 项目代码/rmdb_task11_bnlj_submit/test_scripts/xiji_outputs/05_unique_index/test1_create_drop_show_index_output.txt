@@ -1,0 +1,3 @@
+| warehouse | unique | (id) |
+| warehouse | unique | (id) |
+| warehouse | unique | (id,name) |

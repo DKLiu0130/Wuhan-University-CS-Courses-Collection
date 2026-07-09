@@ -1,0 +1,11 @@
+| time | temperature |
+| 1999-07-07 12:30:00 | 36.000000 |
+failure
+failure
+failure
+failure
+failure
+failure
+failure
+| time | temperature |
+| 1999-07-07 12:30:00 | 36.000000 |

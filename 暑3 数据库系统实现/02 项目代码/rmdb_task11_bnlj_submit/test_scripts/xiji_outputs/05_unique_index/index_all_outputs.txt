@@ -1,0 +1,31 @@
+===== test1_create_drop_show_index =====
+| warehouse | unique | (id) |
+| warehouse | unique | (id) |
+| warehouse | unique | (id,name) |
+
+===== test2_index_query =====
+| w_id | name |
+| 10 | qweruiop |
+| w_id | name |
+| 500 | bgtyhnmj |
+| w_id | name |
+| 10 | qweruiop |
+| w_id | name |
+| 10 | qweruiop |
+| w_id | name |
+| 500 | bgtyhnmj |
+| w_id | name |
+| 100 | qwerghjk |
+| w_id | name |
+| 10 | qweruiop |
+| 100 | qwerghjk |
+
+===== test3_index_maintenance =====
+| w_id | name |
+| 10 | qweruiop |
+| w_id | name |
+| w_id | name |
+| 10 | qweruiop |
+| w_id | name |
+| 500 | lastdanc |
+| 507 | asdfhjkl |

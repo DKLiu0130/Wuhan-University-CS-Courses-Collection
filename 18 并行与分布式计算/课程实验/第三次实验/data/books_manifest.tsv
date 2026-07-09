@@ -1,0 +1,298 @@
+doc_id	path	title
+10	books/pg00010_The_King_James_Version_of_the_Bible.txt	The King James Version of the Bible
+11	books/pg00011_Alice_s_Adventures_in_Wonderland.txt	Alice s Adventures in Wonderland
+12	books/pg00012_Through_the_Looking_Glass.txt	Through the Looking Glass
+16	books/pg00016_Peter_Pan_b_Peter_and_Wendy.txt	Peter Pan b Peter and Wendy
+21	books/pg00021_Three_hundred_Aesop_s_fables_Translated_by_George_Fyler_Town.txt	Three hundred Aesop s fables Translated by George Fyler Town
+23	books/pg00023_Narrative_of_the_Life_of_Frederick_Douglass_an_American_Slav.txt	Narrative of the Life of Frederick Douglass an American Slav
+26	books/pg00026_Paradise_Lost.txt	Paradise Lost
+35	books/pg00035_The_Time_Machine.txt	The Time Machine
+36	books/pg00036_The_war_of_the_worlds.txt	The war of the worlds
+41	books/pg00041_The_Legend_of_Sleepy_Hollow.txt	The Legend of Sleepy Hollow
+42	books/pg00042_The_strange_case_of_Dr_Jekyll_and_Mr_Hyde.txt	The strange case of Dr Jekyll and Mr Hyde
+43	books/pg00043_The_strange_case_of_Dr_Jekyll_and_Mr_Hyde.txt	The strange case of Dr Jekyll and Mr Hyde
+45	books/pg00045_Anne_of_Green_Gables.txt	Anne of Green Gables
+46	books/pg00046_A_Christmas_Carol_in_Prose_Being_a_Ghost_Story_of_Christmas.txt	A Christmas Carol in Prose Being a Ghost Story of Christmas
+55	books/pg00055_The_Wonderful_Wizard_of_Oz.txt	The Wonderful Wizard of Oz
+62	books/pg00062_A_princess_of_Mars.txt	A princess of Mars
+72	books/pg00072_Thuvia_maid_of_Mars.txt	Thuvia maid of Mars
+74	books/pg00074_The_Adventures_of_Tom_Sawyer_Complete.txt	The Adventures of Tom Sawyer Complete
+76	books/pg00076_Adventures_of_Huckleberry_Finn.txt	Adventures of Huckleberry Finn
+79	books/pg00079_Terminal_Compromise.txt	Terminal Compromise
+84	books/pg00084_Frankenstein_or_the_modern_prometheus.txt	Frankenstein or the modern prometheus
+86	books/pg00086_A_Connecticut_Yankee_in_King_Arthur_s_Court.txt	A Connecticut Yankee in King Arthur s Court
+98	books/pg00098_A_Tale_of_Two_Cities.txt	A Tale of Two Cities
+100	books/pg00100_The_Complete_Works_of_William_Shakespeare.txt	The Complete Works of William Shakespeare
+103	books/pg00103_Around_the_World_in_Eighty_Days.txt	Around the World in Eighty Days
+105	books/pg00105_Persuasion.txt	Persuasion
+108	books/pg00108_The_Return_of_Sherlock_Holmes.txt	The Return of Sherlock Holmes
+110	books/pg00110_Tess_of_the_d_Urbervilles_A_Pure_Woman.txt	Tess of the d Urbervilles A Pure Woman
+113	books/pg00113_The_Secret_Garden.txt	The Secret Garden
+120	books/pg00120_Treasure_Island.txt	Treasure Island
+121	books/pg00121_Northanger_Abbey.txt	Northanger Abbey
+132	books/pg00132_The_Art_of_War.txt	The Art of War
+135	books/pg00135_Les_Mis_rables.txt	Les Mis rables
+145	books/pg00145_Middlemarch.txt	Middlemarch
+155	books/pg00155_The_Moonstone.txt	The Moonstone
+158	books/pg00158_Emma.txt	Emma
+160	books/pg00160_The_Awakening_and_Selected_Short_Stories.txt	The Awakening and Selected Short Stories
+161	books/pg00161_Sense_and_Sensibility.txt	Sense and Sensibility
+164	books/pg00164_Twenty_Thousand_Leagues_under_the_Sea.txt	Twenty Thousand Leagues under the Sea
+173	books/pg00173_The_Insidious_Dr_Fu_Manchu.txt	The Insidious Dr Fu Manchu
+174	books/pg00174_The_Picture_of_Dorian_Gray.txt	The Picture of Dorian Gray
+175	books/pg00175_The_Phantom_of_the_Opera.txt	The Phantom of the Opera
+203	books/pg00203_Uncle_Tom_s_Cabin.txt	Uncle Tom s Cabin
+204	books/pg00204_The_innocence_of_Father_Brown.txt	The innocence of Father Brown
+205	books/pg00205_Walden_and_On_The_Duty_Of_Civil_Disobedience.txt	Walden and On The Duty Of Civil Disobedience
+209	books/pg00209_The_Turn_of_the_Screw.txt	The Turn of the Screw
+215	books/pg00215_The_call_of_the_wild.txt	The call of the wild
+219	books/pg00219_Heart_of_Darkness.txt	Heart of Darkness
+221	books/pg00221_The_Return_of_Sherlock_Holmes.txt	The Return of Sherlock Holmes
+223	books/pg00223_The_wisdom_of_Father_Brown.txt	The wisdom of Father Brown
+224	books/pg00224_A_pair_of_blue_eyes.txt	A pair of blue eyes
+228	books/pg00228_The_Aeneid.txt	The Aeneid
+236	books/pg00236_The_Jungle_Book.txt	The Jungle Book
+244	books/pg00244_A_Study_in_Scarlet.txt	A Study in Scarlet
+245	books/pg00245_Life_on_the_Mississippi.txt	Life on the Mississippi
+271	books/pg00271_Black_Beauty_b_The_autobiography_of_a_horse.txt	Black Beauty b The autobiography of a horse
+345	books/pg00345_Dracula.txt	Dracula
+389	books/pg00389_The_Great_God_Pan.txt	The Great God Pan
+393	books/pg00393_The_Blue_Lagoon_A_Romance.txt	The Blue Lagoon A Romance
+394	books/pg00394_Cranford.txt	Cranford
+408	books/pg00408_The_Souls_of_Black_Folk.txt	The Souls of Black Folk
+421	books/pg00421_Kidnapped.txt	Kidnapped
+468	books/pg00468_Manon_Lescaut.txt	Manon Lescaut
+514	books/pg00514_Little_Women.txt	Little Women
+521	books/pg00521_The_Life_and_Adventures_of_Robinson_Crusoe.txt	The Life and Adventures of Robinson Crusoe
+524	books/pg00524_Ann_Veronica_A_Modern_Love_Story.txt	Ann Veronica A Modern Love Story
+537	books/pg00537_Tales_of_Terror_and_Mystery.txt	Tales of Terror and Mystery
+558	books/pg00558_The_Thirty_Nine_Steps.txt	The Thirty Nine Steps
+560	books/pg00560_Mr_Standfast.txt	Mr Standfast
+564	books/pg00564_The_Mystery_of_Edwin_Drood.txt	The Mystery of Edwin Drood
+583	books/pg00583_The_Woman_in_White.txt	The Woman in White
+589	books/pg00589_Catriona.txt	Catriona
+600	books/pg00600_Notes_from_the_Underground.txt	Notes from the Underground
+601	books/pg00601_The_Monk_A_Romance.txt	The Monk A Romance
+730	books/pg00730_Oliver_Twist.txt	Oliver Twist
+732	books/pg00732_History_of_the_Decline_and_Fall_of_the_Roman_Empire_Volume_2.txt	History of the Decline and Fall of the Roman Empire Volume 2
+766	books/pg00766_David_Copperfield.txt	David Copperfield
+768	books/pg00768_Wuthering_Heights.txt	Wuthering Heights
+779	books/pg00779_The_Tragical_History_of_Doctor_Faustus_From_the_Quarto_of_16.txt	The Tragical History of Doctor Faustus From the Quarto of 16
+815	books/pg00815_Democracy_in_America_Volume_1.txt	Democracy in America Volume 1
+829	books/pg00829_Gulliver_s_Travels_into_Several_Remote_Nations_of_the_World.txt	Gulliver s Travels into Several Remote Nations of the World
+831	books/pg00831_Four_Arthurian_Romances.txt	Four Arthurian Romances
+834	books/pg00834_The_Memoirs_of_Sherlock_Holmes.txt	The Memoirs of Sherlock Holmes
+844	books/pg00844_The_Importance_of_Being_Earnest_A_Trivial_Comedy_for_Serious.txt	The Importance of Being Earnest A Trivial Comedy for Serious
+851	books/pg00851_Narrative_of_the_Captivity_and_Restoration_of_Mrs_Mary_Rowla.txt	Narrative of the Captivity and Restoration of Mrs Mary Rowla
+863	books/pg00863_The_Mysterious_Affair_at_Styles.txt	The Mysterious Affair at Styles
+910	books/pg00910_White_Fang.txt	White Fang
+921	books/pg00921_De_Profundis.txt	De Profundis
+940	books/pg00940_The_Last_of_the_Mohicans_A_narrative_of_1757.txt	The Last of the Mohicans A narrative of 1757
+974	books/pg00974_The_Secret_Agent_A_Simple_Tale.txt	The Secret Agent A Simple Tale
+996	books/pg00996_Don_Quixote.txt	Don Quixote
+1001	books/pg01001_Divine_Comedy_Longfellow_s_Translation_Hell.txt	Divine Comedy Longfellow s Translation Hell
+1023	books/pg01023_Bleak_House.txt	Bleak House
+1063	books/pg01063_The_Cask_of_Amontillado.txt	The Cask of Amontillado
+1079	books/pg01079_The_life_and_opinions_of_Tristram_Shandy_gentleman.txt	The life and opinions of Tristram Shandy gentleman
+1080	books/pg01080_A_Modest_Proposal_For_preventing_the_children_of_poor_people.txt	A Modest Proposal For preventing the children of poor people
+1112	books/pg01112_Romeo_and_Juliet.txt	Romeo and Juliet
+1155	books/pg01155_The_Secret_Adversary.txt	The Secret Adversary
+1170	books/pg01170_Anabasis.txt	Anabasis
+1184	books/pg01184_The_Count_of_Monte_Cristo.txt	The Count of Monte Cristo
+1212	books/pg01212_Love_and_Freindship_sic.txt	Love and Freindship sic
+1228	books/pg01228_On_the_Origin_of_Species_By_Means_of_Natural_Selection_Or_th.txt	On the Origin of Species By Means of Natural Selection Or th
+1232	books/pg01232_The_Prince.txt	The Prince
+1251	books/pg01251_Le_Morte_d_Arthur_Volume_1.txt	Le Morte d Arthur Volume 1
+1257	books/pg01257_The_three_musketeers.txt	The three musketeers
+1259	books/pg01259_Twenty_years_after.txt	Twenty years after
+1260	books/pg01260_Jane_Eyre_An_Autobiography.txt	Jane Eyre An Autobiography
+1322	books/pg01322_Leaves_of_Grass.txt	Leaves of Grass
+1342	books/pg01342_Pride_and_Prejudice.txt	Pride and Prejudice
+1399	books/pg01399_Anna_Karenina.txt	Anna Karenina
+1400	books/pg01400_Great_Expectations.txt	Great Expectations
+1497	books/pg01497_The_Republic.txt	The Republic
+1510	books/pg01510_Love_s_Labour_s_Lost.txt	Love s Labour s Lost
+1513	books/pg01513_Romeo_and_Juliet.txt	Romeo and Juliet
+1514	books/pg01514_A_Midsummer_Night_s_Dream.txt	A Midsummer Night s Dream
+1523	books/pg01523_As_You_Like_It.txt	As You Like It
+1524	books/pg01524_Hamlet.txt	Hamlet
+1600	books/pg01600_Symposium.txt	Symposium
+1608	books/pg01608_Camille_La_Dame_aux_Camilias.txt	Camille La Dame aux Camilias
+1636	books/pg01636_Phaedrus.txt	Phaedrus
+1658	books/pg01658_Phaedo.txt	Phaedo
+1661	books/pg01661_The_Adventures_of_Sherlock_Holmes.txt	The Adventures of Sherlock Holmes
+1685	books/pg01685_The_Mystery_of_the_Yellow_Room.txt	The Mystery of the Yellow Room
+1686	books/pg01686_The_Secret_of_the_Night.txt	The Secret of the Night
+1695	books/pg01695_The_Man_Who_Was_Thursday_A_Nightmare.txt	The Man Who Was Thursday A Nightmare
+1719	books/pg01719_The_Ballad_of_the_White_Horse.txt	The Ballad of the White Horse
+1727	books/pg01727_The_Odyssey_Rendered_into_English_prose_for_the_use_of_those.txt	The Odyssey Rendered into English prose for the use of those
+1837	books/pg01837_The_Prince_and_the_Pauper.txt	The Prince and the Pauper
+1849	books/pg01849_The_Yellow_Crayon.txt	The Yellow Crayon
+1872	books/pg01872_The_Red_House_Mystery.txt	The Red House Mystery
+1874	books/pg01874_The_Railway_Children.txt	The Railway Children
+1931	books/pg01931_The_Zeppelin_s_Passenger.txt	The Zeppelin s Passenger
+1934	books/pg01934_Songs_of_Innocence_and_of_Experience.txt	Songs of Innocence and of Experience
+1952	books/pg01952_The_Yellow_Wallpaper.txt	The Yellow Wallpaper
+1998	books/pg01998_Thus_Spake_Zarathustra_A_Book_for_All_and_None.txt	Thus Spake Zarathustra A Book for All and None
+2002	books/pg02002_Sonnets_from_the_Portuguese.txt	Sonnets from the Portuguese
+2038	books/pg02038_The_Lock_and_Key_Library_Classic_Mystery_and_Detective_Stori.txt	The Lock and Key Library Classic Mystery and Detective Stori
+2087	books/pg02087_Life_and_Letters_of_Charles_Darwin_Volume_1.txt	Life and Letters of Charles Darwin Volume 1
+2097	books/pg02097_The_Sign_of_the_Four.txt	The Sign of the Four
+2147	books/pg02147_The_Works_of_Edgar_Allan_Poe_Volume_1.txt	The Works of Edgar Allan Poe Volume 1
+2148	books/pg02148_The_Works_of_Edgar_Allan_Poe_Volume_2.txt	The Works of Edgar Allan Poe Volume 2
+2160	books/pg02160_The_Expedition_of_Humphry_Clinker.txt	The Expedition of Humphry Clinker
+2162	books/pg02162_Anarchism_and_Other_Essays.txt	Anarchism and Other Essays
+2199	books/pg02199_The_Iliad.txt	The Iliad
+2350	books/pg02350_His_last_bow_b_Some_later_reminiscences_of_Sherlock_Holmes.txt	His last bow b Some later reminiscences of Sherlock Holmes
+2360	books/pg02360_The_Riddle_of_the_Sands.txt	The Riddle of the Sands
+2465	books/pg02465_Carmen.txt	Carmen
+2488	books/pg02488_Twenty_Thousand_Leagues_Under_the_Seas_An_Underwater_Tour_of.txt	Twenty Thousand Leagues Under the Seas An Underwater Tour of
+2527	books/pg02527_The_Sorrows_of_Young_Werther.txt	The Sorrows of Young Werther
+2542	books/pg02542_A_Doll_s_House_a_play.txt	A Doll s House a play
+2554	books/pg02554_Crime_and_Punishment.txt	Crime and Punishment
+2591	books/pg02591_Grimms_Fairy_Tales.txt	Grimms Fairy Tales
+2600	books/pg02600_War_and_Peace.txt	War and Peace
+2610	books/pg02610_Notre_Dame_de_Paris.txt	Notre Dame de Paris
+2620	books/pg02620_The_Home_Book_of_Verse_Volume_2.txt	The Home Book of Verse Volume 2
+2638	books/pg02638_The_Idiot.txt	The Idiot
+2641	books/pg02641_A_Room_with_a_View.txt	A Room with a View
+2680	books/pg02680_Meditations.txt	Meditations
+2701	books/pg02701_Moby_Dick_Or_The_Whale.txt	Moby Dick Or The Whale
+2739	books/pg02739_More_Letters_of_Charles_Darwin_Volume_1_A_Record_of_His_Work.txt	More Letters of Charles Darwin Volume 1 A Record of His Work
+2760	books/pg02760_Celebrated_Crimes_Complete.txt	Celebrated Crimes Complete
+2806	books/pg02806_The_Phantom_Rickshaw_and_Other_Ghost_Stories.txt	The Phantom Rickshaw and Other Ghost Stories
+2813	books/pg02813_The_Grand_Babylon_H_tel.txt	The Grand Babylon H tel
+2814	books/pg02814_Dubliners.txt	Dubliners
+2825	books/pg02825_Undine.txt	Undine
+2848	books/pg02848_Antiquities_of_the_Jews.txt	Antiquities of the Jews
+2852	books/pg02852_The_Hound_of_the_Baskervilles.txt	The Hound of the Baskervilles
+2868	books/pg02868_The_Green_Mummy.txt	The Green Mummy
+2895	books/pg02895_Following_the_Equator_A_Journey_Around_the_World.txt	Following the Equator A Journey Around the World
+3011	books/pg03011_The_Lady_of_the_Lake.txt	The Lady of the Lake
+3070	books/pg03070_The_Hound_of_the_Baskervilles.txt	The Hound of the Baskervilles
+3177	books/pg03177_Roughing_It.txt	Roughing It
+3206	books/pg03206_Moby_Multiple_Language_Lists_of_Common_Words.txt	Moby Multiple Language Lists of Common Words
+3207	books/pg03207_Leviathan.txt	Leviathan
+3268	books/pg03268_The_Mysteries_of_Udolpho.txt	The Mysteries of Udolpho
+3289	books/pg03289_The_Valley_of_Fear.txt	The Valley of Fear
+3296	books/pg03296_The_Confessions_of_St_Augustine.txt	The Confessions of St Augustine
+3300	books/pg03300_An_Inquiry_into_the_Nature_and_Causes_of_the_Wealth_of_Natio.txt	An Inquiry into the Nature and Causes of the Wealth of Natio
+3321	books/pg03321_Children_of_the_Whirlwind.txt	Children of the Whirlwind
+3530	books/pg03530_Love_at_arms_b_being_a_narrative_excerpted_from_the_chronicl.txt	Love at arms b being a narrative excerpted from the chronicl
+3600	books/pg03600_Essays_of_Michel_de_Montaigne_Complete.txt	Essays of Michel de Montaigne Complete
+3825	books/pg03825_Pygmalion.txt	Pygmalion
+3922	books/pg03922_The_Red_Lily_Complete.txt	The Red Lily Complete
+4085	books/pg04085_The_Adventures_of_Roderick_Random.txt	The Adventures of Roderick Random
+4200	books/pg04200_The_Diary_of_Samuel_Pepys_Complete.txt	The Diary of Samuel Pepys Complete
+4217	books/pg04217_A_Portrait_of_the_Artist_as_a_Young_Man.txt	A Portrait of the Artist as a Young Man
+4280	books/pg04280_The_Critique_of_Pure_Reason.txt	The Critique of Pure Reason
+4300	books/pg04300_Ulysses.txt	Ulysses
+4363	books/pg04363_Beyond_Good_and_Evil.txt	Beyond Good and Evil
+4367	books/pg04367_Personal_Memoirs_of_U_S_Grant_Complete.txt	Personal Memoirs of U S Grant Complete
+4499	books/pg04499_Complete_Short_Works_of_George_Meredith.txt	Complete Short Works of George Meredith
+4712	books/pg04712_The_Landloper_The_Romance_of_a_Man_on_Foot.txt	The Landloper The Romance of a Man on Foot
+5131	books/pg05131_Childe_Harold_s_Pilgrimage.txt	Childe Harold s Pilgrimage
+5197	books/pg05197_My_Life_Volume_1.txt	My Life Volume 1
+5200	books/pg05200_Metamorphosis.txt	Metamorphosis
+5827	books/pg05827_The_Problems_of_Philosophy.txt	The Problems of Philosophy
+5921	books/pg05921_The_History_of_Don_Quixote_Volume_1_Complete.txt	The History of Don Quixote Volume 1 Complete
+6081	books/pg06081_Biographia_Literaria.txt	Biographia Literaria
+6130	books/pg06130_The_Iliad.txt	The Iliad
+6133	books/pg06133_The_Extraordinary_Adventures_of_Ars_ne_Lupin_Gentleman_Burgl.txt	The Extraordinary Adventures of Ars ne Lupin Gentleman Burgl
+6400	books/pg06400_The_Lives_of_the_Twelve_Caesars_Complete.txt	The Lives of the Twelve Caesars Complete
+6593	books/pg06593_History_of_Tom_Jones_a_Foundling.txt	History of Tom Jones a Foundling
+6635	books/pg06635_A_Romance_of_Billy_Goat_Hill.txt	A Romance of Billy Goat Hill
+6761	books/pg06761_The_Adventures_of_Ferdinand_Count_Fathom_Complete.txt	The Adventures of Ferdinand Count Fathom Complete
+7326	books/pg07326_The_Yeoman_Adventurer.txt	The Yeoman Adventurer
+7370	books/pg07370_Second_Treatise_of_Government.txt	Second Treatise of Government
+7452	books/pg07452_Autobiography_of_a_Yogi.txt	Autobiography of a Yogi
+7524	books/pg07524_The_Germany_and_the_Agricola_of_Tacitus.txt	The Germany and the Agricola of Tacitus
+7700	books/pg07700_Lysistrata.txt	Lysistrata
+7735	books/pg07735_Paul_Clifford_Complete.txt	Paul Clifford Complete
+8197	books/pg08197_India_s_Love_Lyrics.txt	India s Love Lyrics
+8438	books/pg08438_The_Ethics_of_Aristotle.txt	The Ethics of Aristotle
+8486	books/pg08486_Ghost_Stories_of_an_Antiquary.txt	Ghost Stories of an Antiquary
+8492	books/pg08492_The_King_in_Yellow.txt	The King in Yellow
+8710	books/pg08710_The_Dor_Bible_Gallery_Complete_Containing_One_Hundred_Superb.txt	The Dor Bible Gallery Complete Containing One Hundred Superb
+8800	books/pg08800_The_divine_comedy.txt	The divine comedy
+8954	books/pg08954_Lady_Audley_s_Secret.txt	Lady Audley s Secret
+9695	books/pg09695_Bleak_House.txt	Bleak House
+9701	books/pg09701_I_Beowulf_an_Anglo_Saxon_poem_II_The_fight_at_Finnsburh_a_fr.txt	I Beowulf an Anglo Saxon poem II The fight at Finnsburh a fr
+10002	books/pg10002_The_House_on_the_Borderland.txt	The House on the Borderland
+10007	books/pg10007_Carmilla.txt	Carmilla
+10148	books/pg10148_The_Merry_Adventures_of_Robin_Hood.txt	The Merry Adventures of Robin Hood
+10441	books/pg10441_The_Green_Mouse.txt	The Green Mouse
+10623	books/pg10623_Plays.txt	Plays
+10625	books/pg10625_A_Concise_Dictionary_of_Middle_English_from_A_D_1150_to_1580.txt	A Concise Dictionary of Middle English from A D 1150 to 1580
+10636	books/pg10636_The_Travels_of_Marco_Polo_Volume_1.txt	The Travels of Marco Polo Volume 1
+10676	books/pg10676_The_Reign_of_Greed.txt	The Reign of Greed
+10681	books/pg10681_Roget_s_Thesaurus_of_English_Words_and_Phrases.txt	Roget s Thesaurus of English Words and Phrases
+11030	books/pg11030_Incidents_in_the_Life_of_a_Slave_Girl_Written_by_Herself.txt	Incidents in the Life of a Slave Girl Written by Herself
+11339	books/pg11339_Aesop_s_Fables_a_new_translation.txt	Aesop s Fables a new translation
+11618	books/pg11618_From_Chaucer_to_Tennyson_With_Twenty_Nine_Portraits_and_Sele.txt	From Chaucer to Tennyson With Twenty Nine Portraits and Sele
+11982	books/pg11982_Eighty_Years_and_More_Reminiscences_1815_1897.txt	Eighty Years and More Reminiscences 1815 1897
+11987	books/pg11987_By_Advice_of_Counsel.txt	By Advice of Counsel
+12082	books/pg12082_Color_Images_from_Mars_Rovers_Spirit_and_Opportunity.txt	Color Images from Mars Rovers Spirit and Opportunity
+12345	books/pg12345_Friday_the_Thirteenth_A_Novel.txt	Friday the Thirteenth A Novel
+12758	books/pg12758_Library_of_the_World_s_Best_Mystery_and_Detective_Stories.txt	Library of the World s Best Mystery and Detective Stories
+13188	books/pg13188_Putnam_s_Word_Book_A_Practical_Aid_in_Expressing_Ideas_Throu.txt	Putnam s Word Book A Practical Aid in Expressing Ideas Throu
+14244	books/pg14244_The_Romance_of_Tristan_and_Iseult.txt	The Romance of Tristan and Iseult
+14328	books/pg14328_The_Consolation_of_Philosophy.txt	The Consolation of Philosophy
+14471	books/pg14471_The_Empty_House_and_Other_Ghost_Stories.txt	The Empty House and Other Ghost Stories
+14591	books/pg14591_Faust_part_1_Translated_Into_English_in_the_Original_Metres.txt	Faust part 1 Translated Into English in the Original Metres
+14818	books/pg14818_The_Daughter_of_Anderson_Crow.txt	The Daughter of Anderson Crow
+14838	books/pg14838_The_Tale_of_Peter_Rabbit.txt	The Tale of Peter Rabbit
+14860	books/pg14860_The_Journal_of_Sir_Walter_Scott_From_the_Original_Manuscript.txt	The Journal of Sir Walter Scott From the Original Manuscript
+15272	books/pg15272_Spenser_s_The_Faerie_Queene_Book_I.txt	Spenser s The Faerie Queene Book I
+15381	books/pg15381_Victorian_Short_Stories_Stories_of_Courtship.txt	Victorian Short Stories Stories of Courtship
+15384	books/pg15384_The_Real_Adventure.txt	The Real Adventure
+15399	books/pg15399_The_Interesting_Narrative_of_the_Life_of_Olaudah_Equiano_Or_.txt	The Interesting Narrative of the Life of Olaudah Equiano Or 
+15474	books/pg15474_The_Mahabharata_of_Krishna_Dwaipayana_Vyasa_Volume_1_Books_1.txt	The Mahabharata of Krishna Dwaipayana Vyasa Volume 1 Books 1
+15877	books/pg15877_Thoughts_of_Marcus_Aurelius_Antoninus.txt	Thoughts of Marcus Aurelius Antoninus
+16328	books/pg16328_Beowulf_An_Anglo_Saxon_Epic_Poem.txt	Beowulf An Anglo Saxon Epic Poem
+16351	books/pg16351_Critical_and_Historical_Essays_Lectures_delivered_at_Columbi.txt	Critical and Historical Essays Lectures delivered at Columbi
+16389	books/pg16389_The_Enchanted_April.txt	The Enchanted April
+16433	books/pg16433_The_Gay_Cockade.txt	The Gay Cockade
+16643	books/pg16643_Essays_by_Ralph_Waldo_Emerson.txt	Essays by Ralph Waldo Emerson
+16679	books/pg16679_The_history_of_England_from_the_accession_of_Henry_III_to_th.txt	The history of England from the accession of Henry III to th
+16921	books/pg16921_Plague_Ship.txt	Plague Ship
+17157	books/pg17157_Gulliver_s_Travels_into_Several_Remote_Regions_of_the_World.txt	Gulliver s Travels into Several Remote Regions of the World
+18269	books/pg18269_Pascal_s_Pens_es.txt	Pascal s Pens es
+18857	books/pg18857_A_Journey_to_the_Centre_of_the_Earth.txt	A Journey to the Centre of the Earth
+19476	books/pg19476_A_Honeymoon_in_Space.txt	A Honeymoon in Space
+19488	books/pg19488_The_Life_of_Joan_of_Arc_Vol_1_and_2.txt	The Life of Joan of Arc Vol 1 and 2
+19839	books/pg19839_Emma.txt	Emma
+19942	books/pg19942_Candide.txt	Candide
+20000	books/pg20000_Twenty_Thousand_Leagues_Under_the_Sea.txt	Twenty Thousand Leagues Under the Sea
+20027	books/pg20027_Grimms_Fairy_Tales.txt	Grimms Fairy Tales
+20203	books/pg20203_Autobiography_of_Benjamin_Franklin.txt	Autobiography of Benjamin Franklin
+20265	books/pg20265_Anne_of_the_Island.txt	Anne of the Island
+20417	books/pg20417_The_Outline_of_Science_Vol_1_of_4_A_Plain_Story_Simply_Told.txt	The Outline of Science Vol 1 of 4 A Plain Story Simply Told
+20593	books/pg20593_Anne_of_Green_Gables.txt	Anne of Green Gables
+21181	books/pg21181_Villette.txt	Villette
+21436	books/pg21436_Poems_Every_Child_Should_Know.txt	Poems Every Child Should Know
+21700	books/pg21700_Don_Juan.txt	Don Juan
+21765	books/pg21765_The_Metamorphoses_of_Ovid_Books_I_VII.txt	The Metamorphoses of Ovid Books I VII
+22541	books/pg22541_The_Misplaced_Battleship.txt	The Misplaced Battleship
+22542	books/pg22542_Jesus_the_Christ_A_Study_of_the_Messiah_and_His_Mission_Acco.txt	Jesus the Christ A Study of the Messiah and His Mission Acco
+22788	books/pg22788_The_Federalist_Papers.txt	The Federalist Papers
+22789	books/pg22789_On_the_Duties_of_the_Clergy.txt	On the Duties of the Clergy
+22815	books/pg22815_The_Philippine_Islands_A_Political_Geographical_Ethnographic.txt	The Philippine Islands A Political Geographical Ethnographic
+22981	books/pg22981_Letters_of_Two_Brides.txt	Letters of Two Brides
+23349	books/pg23349_The_Religious_Experience_of_the_Roman_People_From_the_Earlie.txt	The Religious Experience of the Roman People From the Earlie
+23784	books/pg23784_The_History_of_Sir_Richard_Calmady_A_Romance.txt	The History of Sir Richard Calmady A Romance
+24253	books/pg24253_Folkways_A_Study_of_the_Sociological_Importance_of_Usages_Ma.txt	Folkways A Study of the Sociological Importance of Usages Ma
+24739	books/pg24739_Bidwell_s_Travels_from_Wall_Street_to_London_Prison_Fifteen_.txt	Bidwell s Travels from Wall Street to London Prison Fifteen 
+24869	books/pg24869_The_R_m_yan_of_V_lm_ki_translated_into_English_verse.txt	The R m yan of V lm ki translated into English verse
+25344	books/pg25344_The_Scarlet_Letter.txt	The Scarlet Letter
+25833	books/pg25833_The_Great_Controversy_Between_Christ_and_Satan.txt	The Great Controversy Between Christ and Satan
+25851	books/pg25851_The_Life_of_Charles_Dickens_Vol_I_III_Complete.txt	The Life of Charles Dickens Vol I III Complete
+26184	books/pg26184_Simple_Sabotage_Field_Manual.txt	Simple Sabotage Field Manual
+26225	books/pg26225_Fifteen_Thousand_Useful_Phrases.txt	Fifteen Thousand Useful Phrases
+26471	books/pg26471_Spoon_River_Anthology.txt	Spoon River Anthology
+27673	books/pg27673_Oedipus_King_of_Thebes_Translated_into_English_Rhyming_Verse.txt	Oedipus King of Thebes Translated into English Rhyming Verse
+28054	books/pg28054_The_Brothers_Karamazov.txt	The Brothers Karamazov
+28189	books/pg28189_My_Friends_the_Savages_Notes_and_Observations_of_a_Perak_set.txt	My Friends the Savages Notes and Observations of a Perak set
+28811	books/pg28811_Barchester_Towers.txt	Barchester Towers
+28942	books/pg28942_The_Junior_Classics_Volume_1_Fairy_and_wonder_tales.txt	The Junior Classics Volume 1 Fairy and wonder tales
+29090	books/pg29090_The_Complete_Poetical_Works_of_Samuel_Taylor_Coleridge_Vol_1.txt	The Complete Poetical Works of Samuel Taylor Coleridge Vol 1

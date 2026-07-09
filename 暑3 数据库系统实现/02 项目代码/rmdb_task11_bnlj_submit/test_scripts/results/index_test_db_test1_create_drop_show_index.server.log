@@ -1,0 +1,49 @@
+
+  _____  __  __ _____  ____  
+ |  __ \|  \/  |  __ \|  _ \ 
+ | |__) | \  / | |  | | |_) |
+ |  _  /| |\/| | |  | |  _ < 
+ | | \ \| |  | | |__| | |_) |
+ |_|  \_\_|  |_|_____/|____/ 
+
+Welcome to RMDB!
+Type 'help;' for help.
+
+Waiting for new connection...
+Waiting for new connection...
+establish client connection, sockfd: 4
+Waiting for request...
+i_recvBytes: 47 
+ Read from client 4: create table warehouse (id int, name char(8));
+Waiting for request...
+i_recvBytes: 29 
+ Read from client 4: create index warehouse (id);
+1
+Waiting for request...
+i_recvBytes: 27 
+ Read from client 4: show index from warehouse;
+Waiting for request...
+i_recvBytes: 34 
+ Read from client 4: create index warehouse (id,name);
+2
+Waiting for request...
+i_recvBytes: 27 
+ Read from client 4: show index from warehouse;
+Waiting for request...
+i_recvBytes: 27 
+ Read from client 4: drop index warehouse (id);
+Waiting for request...
+i_recvBytes: 32 
+ Read from client 4: drop index warehouse (id,name);
+Waiting for request...
+i_recvBytes: 27 
+ Read from client 4: show index from warehouse;
+Waiting for request...
+i_recvBytes: 5 
+ Client exit.
+Terminating current client_connection...
+The Server receive Crtl+C, will been closed
+Break from Server Listen Loop
+ Try to close all client-connection.
+ DB has been closed.
+Server shuts down.

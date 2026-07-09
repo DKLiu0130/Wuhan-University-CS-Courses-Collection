@@ -1,0 +1,32 @@
+Router1>en
+Router1#show running //查看当前配置
+Router1#show ip route  //查看路由表
+Router1#show interface  //查看接口
+Router1#conf t   //进入全局配置模式
+Router1(config)#ip route 目标网络  子网掩码  下一跳地址
+Router1(config)#ip route 0.0.0.0  0.0.0.0   下一跳地址
+Router1(config)#no ip route  目标网络  子网掩码  下一跳地址
+Router1(config)#hostname 主机名 //配置路由器名称
+Router1(config)#enable secret cisco  //配置路由器特权用户密码
+Router1(config)#line vty 0 4
+Router1(config-line)#pass cisco
+Router1(config-line)#login
+Router1(config-line)#exit
+Router1(config)#int fa0/0   //进入接口模式
+Router1(config-if)#ip address ip地址 子网掩码   
+Router1(config-if)#no shutdown
+Router1(config-if)#end
+Router1#show run
+Router1#write
+
+
+Router1(config)#ip dhcp pool student
+Router(dhcp-config)#network 192.168.1.0 255.255.255.0
+Router(dhcp-config)#default-router 192.168.1.254
+
+
+service dhcp
+
+
+
+
